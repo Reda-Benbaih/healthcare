@@ -19,6 +19,6 @@ public class Doctor {
     private String email;
     private Long phone;
 
-    @OneToMany(mappedBy = "doctor" ,cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "doctor" ,cascade = CascadeType.ALL)
     private List<Appointment> appointmentList;
 }

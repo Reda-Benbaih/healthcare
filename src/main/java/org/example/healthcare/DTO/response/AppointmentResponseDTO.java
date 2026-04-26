@@ -12,5 +12,6 @@ public class AppointmentResponseDTO {
     private Integer id;
     private LocalDate appointmentDate;
     private String status;
-
+    private Integer doctorId;
+    private Integer patientId;
 }

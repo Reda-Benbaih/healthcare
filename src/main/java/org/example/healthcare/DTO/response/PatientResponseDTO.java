@@ -13,5 +13,5 @@ public class PatientResponseDTO {
     private String firstName;
     private String lastName;
     private Long phone;
-    private LocalDate BirthDay;
+    private LocalDate birthDay;
 }

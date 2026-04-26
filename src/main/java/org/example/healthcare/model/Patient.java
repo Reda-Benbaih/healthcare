@@ -2,7 +2,7 @@ package org.example.healthcare.model;
 
 import jakarta.persistence.*;
 import lombok.*;
-import org.springframework.data.annotation.Id;
+
 
 import java.time.LocalDate;
 import java.util.List;
@@ -22,7 +22,7 @@ public class Patient {
     private Long phone;
     private LocalDate birthDay;
 
-    @OneToMany(mappedBy = "patient",cascade = CascadeType.PERSIST)
+    @OneToMany(mappedBy = "patient",cascade = CascadeType.ALL)
     private List<Appointment> appointment;
 
     @OneToOne(mappedBy = "patient", cascade = CascadeType.ALL)
