@@ -5,6 +5,7 @@ import org.example.healthcare.DTO.response.AppointmentResponseDTO;
 import org.example.healthcare.model.Appointment;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
 
 @Mapper(componentModel = "spring")
 public interface AppointmentMapper {
@@ -16,4 +17,5 @@ public interface AppointmentMapper {
     @Mapping(target = "patient",ignore = true)
     Appointment toEntity(AppointmentRequestDTO appointmentRequestDTO);
 
+    void updateEntityFromDTO(AppointmentRequestDTO appointmentRequestDTO, @MappingTarget Appointment appointment);
 }
