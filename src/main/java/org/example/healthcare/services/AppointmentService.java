@@ -44,4 +44,10 @@ public class AppointmentService {
                 .map(appointment -> appointmentMapper.toDTO(appointment))
                 .toList();
     }
+
+    public List<AppointmentResponseDTO> showAllAppointmentByDoctorId(Integer id){
+        return appointmentRepository.findByDoctorId(id).stream()
+                .map(appointment -> appointmentMapper.toDTO(appointment))
+                .toList();
+    }
 }
