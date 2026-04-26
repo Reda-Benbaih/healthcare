@@ -8,9 +8,10 @@ import java.time.LocalDate;
 
 @Getter @Setter
 @Builder
-public class AppointmentResponseDTO {
+public class PatientRequestDTO {
     private Integer id;
-    private LocalDate appointmentDate;
-    private String status;
-
+    private String firstName;
+    private String lastName;
+    private Long phone;
+    private LocalDate BirthDay;
 }

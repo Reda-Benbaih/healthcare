@@ -8,9 +8,9 @@ import java.time.LocalDate;
 
 @Getter @Setter
 @Builder
-public class AppointmentResponseDTO {
+public class MedicalFileResonseDTO {
     private Integer id;
-    private LocalDate appointmentDate;
-    private String status;
-
+    private String diagnosis;
+    private String observation;
+    private LocalDate creationDate;
 }
