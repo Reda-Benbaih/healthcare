@@ -8,7 +8,7 @@ import java.time.LocalDate;
 
 @Getter @Setter
 @Builder
-public class PatientRequestDTO {
+public class PatientResponseDTO {
     private Integer id;
     private String firstName;
     private String lastName;
