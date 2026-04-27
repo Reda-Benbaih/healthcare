@@ -44,6 +44,7 @@ public class PatientService {
         return patientMapper.toDTO(patient);
     }
 
+    @Transactional
     public PatientResponseDTO updatePatient(Integer id,PatientRequestDTO patientRequestDTO){
         Patient patient = patientRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("ce patient avec ce "+id+" n'existe pas"));

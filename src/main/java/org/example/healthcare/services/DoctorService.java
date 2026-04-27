@@ -37,6 +37,7 @@ public class DoctorService {
                 .toList();
     }
 
+    @Transactional
     public DoctorResponseDTO updateDoctor(Integer id , DoctorRequestDTO doctorRequestDTO){
         Doctor doctor = doctorRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("medecin avec ce id "+id+" n'existe pas"));
