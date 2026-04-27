@@ -4,12 +4,11 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.AppointmentRequestDTO;
 import org.example.healthcare.DTO.response.AppointmentResponseDTO;
 import org.example.healthcare.services.AppointmentService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/{id}")
 @RequiredArgsConstructor
 public class AppointmentController {

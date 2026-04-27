@@ -4,12 +4,11 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.PatientRequestDTO;
 import org.example.healthcare.DTO.response.PatientResponseDTO;
 import org.example.healthcare.services.PatientService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@Controller
+@RestController
 @RequestMapping("/api/patient")
 @RequiredArgsConstructor
 public class PatientController {

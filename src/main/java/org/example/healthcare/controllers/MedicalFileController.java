@@ -4,10 +4,9 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.services.MedicalFileService;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
 @RequestMapping("/api/medicalFile}")
 @RequiredArgsConstructor
 public class MedicalFileController {
