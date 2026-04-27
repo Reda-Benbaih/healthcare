@@ -12,4 +12,5 @@ public class MedicalFileRequestDTO {
     private String diagnosis;
     private String observation;
     private LocalDate creationDate;
+    private Integer patientId;
 }

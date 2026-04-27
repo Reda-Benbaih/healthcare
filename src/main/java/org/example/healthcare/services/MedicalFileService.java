@@ -6,7 +6,9 @@ import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.mapper.MedicalFileMapper;
 import org.example.healthcare.model.MedicalFile;
+import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.MedicalFileRepository;
+import org.example.healthcare.repositories.PatientRepository;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,9 +16,12 @@ import org.springframework.stereotype.Service;
 public class MedicalFileService {
     private final MedicalFileMapper medicalFileMapper;
     private final MedicalFileRepository medicalFileRepository;
+    private final PatientRepository patientRepository;
 
     @Transactional
     public MedicalFileResponseDTO addMedicalFile(MedicalFileRequestDTO medicalFileRequestDTO){
+        Patient patient = patientRepository.findById(medicalFileRequestDTO.getPatientId())
+                .orElseThrow(() -> new RuntimeException("Patient non trouvé avec l'id : " + medicalFileRequestDTO.getPatientId()));
         MedicalFile medicalFile = medicalFileMapper.toEntity(medicalFileRequestDTO);
         MedicalFile savedMedicalFile = medicalFileRepository.save(medicalFile);
         return medicalFileMapper.toDTO(savedMedicalFile);

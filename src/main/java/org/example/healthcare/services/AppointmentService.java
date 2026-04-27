@@ -6,7 +6,11 @@ import org.example.healthcare.DTO.request.AppointmentRequestDTO;
 import org.example.healthcare.DTO.response.AppointmentResponseDTO;
 import org.example.healthcare.mapper.AppointmentMapper;
 import org.example.healthcare.model.Appointment;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.AppointmentRepository;
+import org.example.healthcare.repositories.DoctorRepository;
+import org.example.healthcare.repositories.PatientRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,11 +20,20 @@ import java.util.List;
 public class AppointmentService {
     private final AppointmentRepository appointmentRepository;
     private final AppointmentMapper appointmentMapper;
+    private final DoctorRepository doctorRepository;
+    private final PatientRepository patientRepository;
 
     @Transactional
     public AppointmentResponseDTO createAppointment(AppointmentRequestDTO appointmentRequestDTO){
+        Doctor doctor = doctorRepository.findById(appointmentRequestDTO.getDoctorId())
+                .orElseThrow(() -> new RuntimeException("Médecin non trouvé avec l'id : " + appointmentRequestDTO.getDoctorId()));
+        Patient patient = patientRepository.findById(appointmentRequestDTO.getPatientId())
+                .orElseThrow(() -> new RuntimeException("Patient non trouvé avec l'id : " + appointmentRequestDTO.getPatientId()));
         Appointment appointment = appointmentMapper.toEntity(appointmentRequestDTO);
+        appointment.setDoctor(doctor);
+        appointment.setPatient(patient);
         Appointment savedAppointment = appointmentRepository.save(appointment);
+
         return appointmentMapper.toDTO(savedAppointment);
     }
 
