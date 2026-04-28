@@ -7,7 +7,7 @@ import org.example.healthcare.services.MedicalFileService;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("/api/medicalFile}")
+@RequestMapping("/api/medicalFile")
 @RequiredArgsConstructor
 public class MedicalFileController {
     private final MedicalFileService medicalFileService;
@@ -22,7 +22,7 @@ public class MedicalFileController {
         return medicalFileService.showMedicalFileById(id);
     }
 
-    @PutMapping("/{id]")
+    @PutMapping("/{id}")
     public MedicalFileResponseDTO updateMedicalFile(@PathVariable Integer id, @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
         return medicalFileService.updateMedicalFile(id, medicalFileRequestDTO);
     }

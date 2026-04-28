@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/{id}")
+@RequestMapping("/api/appointment")
 @RequiredArgsConstructor
 public class AppointmentController {
     private final AppointmentService appointmentService;
@@ -25,7 +25,7 @@ public class AppointmentController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteAppointment(Integer id){
+    public void deleteAppointment(@PathVariable Integer id){
         appointmentService.deleteAppointment(id);
     }
 
@@ -34,12 +34,12 @@ public class AppointmentController {
         return  appointmentService.showAllAppointment();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/patient/{id}")
     public List<AppointmentResponseDTO> showAllAppointmentByPatientId(@PathVariable Integer id){
         return appointmentService.showAllAppointmentByPatientId(id);
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/doctor/{id}")
     public List<AppointmentResponseDTO> showAllAppointmentByDoctorId(@PathVariable Integer id){
         return appointmentService.showAllAppointmentByDoctorId(id);
     }
