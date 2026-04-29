@@ -26,9 +26,9 @@ public class AppointmentService {
     @Transactional
     public AppointmentResponseDTO createAppointment(AppointmentRequestDTO appointmentRequestDTO){
         Doctor doctor = doctorRepository.findById(appointmentRequestDTO.getDoctorId())
-                .orElseThrow(() -> new RuntimeException("Médecin non trouvé avec l'id : " + appointmentRequestDTO.getDoctorId()));
+                .orElseThrow(() -> new RuntimeException("medecin non touve avec l'id : " + appointmentRequestDTO.getDoctorId()));
         Patient patient = patientRepository.findById(appointmentRequestDTO.getPatientId())
-                .orElseThrow(() -> new RuntimeException("Patient non trouvé avec l'id : " + appointmentRequestDTO.getPatientId()));
+                .orElseThrow(() -> new RuntimeException("patient non trouve avec l'id : " + appointmentRequestDTO.getPatientId()));
         Appointment appointment = appointmentMapper.toEntity(appointmentRequestDTO);
         appointment.setDoctor(doctor);
         appointment.setPatient(patient);
