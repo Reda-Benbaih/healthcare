@@ -3,7 +3,8 @@ create table patient(
     first_name varchar(255) not null ,
     last_name varchar(255) not null,
     email varchar(255) not null unique ,
-    phone bigint not null unique
+    phone bigint not null unique,
+    birth_day DATE not null
 );
 create table doctor(
     id int auto_increment primary key,

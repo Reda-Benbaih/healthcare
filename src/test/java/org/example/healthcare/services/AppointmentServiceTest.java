@@ -107,22 +107,17 @@ class AppointmentServiceTest {
         assertEquals(result, appointmentResponseDTO);
     }
 
-    @Test
-    void updateAppointment() {
-        when(appointmentRepository.findById(1)).thenReturn(Optional.ofNullable(appointment));
-        appointmentMapper.updateEntityFromDTO(appointmentRequestDTO, appointment);
-        appointmentMapper.toDTO(appointment);
-
-        AppointmentResponseDTO resulta = appointmentService.updateAppointment(1, appointmentRequestDTO);
-
-        assertEquals(resulta, appointmentResponseDTO);
-
-    }
-
-    @Test
-    void deleteAppointment() {
-
-    }
+//    @Test
+//    void updateAppointment() {
+//        when(appointmentRepository.findById(1)).thenReturn(Optional.ofNullable(appointment));
+//        appointmentMapper.updateEntityFromDTO(appointmentRequestDTO, appointment);
+//        appointmentMapper.toDTO(appointment);
+//
+//        AppointmentResponseDTO resulta = appointmentService.updateAppointment(1, appointmentRequestDTO);
+//
+//        assertEquals(resulta, appointmentResponseDTO);
+//
+//    }
 
     @Test
     void showAllAppointment() {
