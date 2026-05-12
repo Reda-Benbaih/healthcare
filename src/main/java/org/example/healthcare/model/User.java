@@ -1,13 +1,12 @@
 package org.example.healthcare.model;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Entity
 @Table(name="user")
 @AllArgsConstructor @NoArgsConstructor
+@Getter @Setter
 @Builder
 public class User {
     @Id

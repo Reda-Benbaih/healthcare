@@ -28,11 +28,7 @@ public class PatientService {
 
     @Transactional
     public List<PatientResponseDTO> showAllPatients(){
-         Stream<Patient> exemple = patientRepository.findAll().stream();
 
-         List<PatientResponseDTO> array = exemple.map(patient -> patientMapper.toDTO(patient)).toList();
-
-        List<PatientResponseDTO> array = exemple.toList();
     }
 
     @Transactional
