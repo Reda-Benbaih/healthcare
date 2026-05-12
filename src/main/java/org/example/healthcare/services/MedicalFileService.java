@@ -23,6 +23,7 @@ public class MedicalFileService {
         Patient patient = patientRepository.findById(medicalFileRequestDTO.getPatientId())
                 .orElseThrow(() -> new RuntimeException("Patient non trouvé avec l'id : " + medicalFileRequestDTO.getPatientId()));
         MedicalFile medicalFile = medicalFileMapper.toEntity(medicalFileRequestDTO);
+        medicalFile.setPatient(patient);
         MedicalFile savedMedicalFile = medicalFileRepository.save(medicalFile);
         return medicalFileMapper.toDTO(savedMedicalFile);
     }

@@ -94,6 +94,7 @@ class AppointmentServiceTest {
 
     @Test
     void createAppointment() {
+        // arrange
         when(doctorRepository.findById(1)).thenReturn(Optional.ofNullable(doctor));
         when(patientRepository.findById(1)).thenReturn(Optional.ofNullable(patient));
         when(appointmentMapper.toEntity(appointmentRequestDTO)).thenReturn(appointment);

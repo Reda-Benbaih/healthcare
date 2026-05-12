@@ -11,6 +11,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Stream;
 
 @Service
 @RequiredArgsConstructor
@@ -27,9 +28,11 @@ public class PatientService {
 
     @Transactional
     public List<PatientResponseDTO> showAllPatients(){
-        return patientRepository.findAll().stream()
-                .map(patient -> patientMapper.toDTO(patient))
-                .toList();
+         Stream<Patient> exemple = patientRepository.findAll().stream();
+
+         List<PatientResponseDTO> array = exemple.map(patient -> patientMapper.toDTO(patient)).toList();
+
+        List<PatientResponseDTO> array = exemple.toList();
     }
 
     @Transactional
