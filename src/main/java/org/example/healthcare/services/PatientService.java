@@ -28,7 +28,9 @@ public class PatientService {
 
     @Transactional
     public List<PatientResponseDTO> showAllPatients(){
-
+        return patientRepository.findAll().stream()
+                .map(patient -> patientMapper.toDTO(patient))
+                .toList();
     }
 
     @Transactional
