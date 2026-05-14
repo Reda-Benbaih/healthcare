@@ -1,0 +1,53 @@
+package org.example.healthcare.services;
+
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.user.AuthResponse;
+import org.example.healthcare.DTO.user.LoginRequest;
+import org.example.healthcare.DTO.user.RegisterRequest;
+import org.example.healthcare.model.User;
+import org.example.healthcare.repositories.UserRepository;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class AuthenticationService {
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
+    private final AuthenticationManager authenticationManager;
+
+    public AuthResponse register(RegisterRequest registerRequest){
+        User user = User.builder()
+                .username(registerRequest.getUsername())
+                .password(passwordEncoder.encode(passwordEncoder.encode(registerRequest.getPassword())))
+                .build();
+
+        userRepository.save(user);
+
+        String token = jwtService.generateToken(user);
+
+        return  AuthResponse.builder()
+                .token(token).build();
+
+    }
+
+    public AuthResponse login(LoginRequest request){
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(request.getEmail(),request.getPassword())
+        );
+
+        User user = userRepository.findByEmail(request.getEmail()).orElseThrow();
+
+        String token = jwtService.generateToken(user);
+
+        return AuthResponse.builder().token(token).build();
+
+    }
+
+
+
+
+}
