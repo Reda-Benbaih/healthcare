@@ -1,9 +1,12 @@
 package org.example.healthcare.controllers;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.DoctorRequestDTO;
 import org.example.healthcare.DTO.response.DoctorResponseDTO;
 import org.example.healthcare.services.DoctorService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -15,23 +18,25 @@ public class DoctorController {
     private final DoctorService doctorService;
 
     @PostMapping
-    public DoctorResponseDTO addDoctor(@RequestBody DoctorRequestDTO doctorRequestDTO){
-        return doctorService.addDoctor(doctorRequestDTO);
+    public ResponseEntity<DoctorResponseDTO> addDoctor(@Valid @RequestBody DoctorRequestDTO doctorRequestDTO){
+        DoctorResponseDTO response = doctorService.addDoctor(doctorRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteDoctor(@PathVariable Integer id){
+    public ResponseEntity<Void> deleteDoctor(@PathVariable Integer id){
         doctorService.deleteDoctor(id);
+        return ResponseEntity.noContent().build();
     }
 
     @GetMapping
-    public List<DoctorResponseDTO> showAllDoctors(){
-        return doctorService.showAllDoctors();
+    public ResponseEntity<List<DoctorResponseDTO>> showAllDoctors(){
+        return ResponseEntity.ok(doctorService.showAllDoctors());
     }
 
     @PutMapping("/{id}")
-    public DoctorResponseDTO updateDoctor(@PathVariable Integer id ,@RequestBody DoctorRequestDTO doctorRequestDTO){
-        return  doctorService.updateDoctor(id, doctorRequestDTO);
+    public ResponseEntity<DoctorResponseDTO> updateDoctor(@PathVariable Integer id, @Valid @RequestBody DoctorRequestDTO doctorRequestDTO){
+        DoctorResponseDTO response = doctorService.updateDoctor(id, doctorRequestDTO);
+        return ResponseEntity.ok(response);
     }
-
 }

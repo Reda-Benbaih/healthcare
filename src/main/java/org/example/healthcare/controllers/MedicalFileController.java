@@ -1,9 +1,12 @@
 package org.example.healthcare.controllers;
 
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.services.MedicalFileService;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -13,17 +16,19 @@ public class MedicalFileController {
     private final MedicalFileService medicalFileService;
 
     @PostMapping
-    public MedicalFileResponseDTO addMedicalFile(@RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
-        return medicalFileService.addMedicalFile(medicalFileRequestDTO);
+    public ResponseEntity<MedicalFileResponseDTO> addMedicalFile(@Valid @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
+        MedicalFileResponseDTO response = medicalFileService.addMedicalFile(medicalFileRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
     @GetMapping("/{id}")
-    public MedicalFileResponseDTO showMedicalFileById(@PathVariable Integer id){
-        return medicalFileService.showMedicalFileById(id);
+    public ResponseEntity<MedicalFileResponseDTO> showMedicalFileById(@PathVariable Integer id){
+        return ResponseEntity.ok(medicalFileService.showMedicalFileById(id));
     }
 
     @PutMapping("/{id}")
-    public MedicalFileResponseDTO updateMedicalFile(@PathVariable Integer id, @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
-        return medicalFileService.updateMedicalFile(id, medicalFileRequestDTO);
+    public ResponseEntity<MedicalFileResponseDTO> updateMedicalFile(@PathVariable Integer id, @Valid @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
+        MedicalFileResponseDTO response = medicalFileService.updateMedicalFile(id, medicalFileRequestDTO);
+        return ResponseEntity.ok(response);
     }
 }

@@ -22,7 +22,8 @@ public class AuthenticationService {
     public AuthResponse register(RegisterRequest registerRequest){
         User user = User.builder()
                 .username(registerRequest.getUsername())
-                .password(passwordEncoder.encode(passwordEncoder.encode(registerRequest.getPassword())))
+                .email(registerRequest.getEmail())
+                .password(passwordEncoder.encode(registerRequest.getPassword()))
                 .build();
 
         userRepository.save(user);
