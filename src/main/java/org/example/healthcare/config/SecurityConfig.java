@@ -47,6 +47,14 @@ public class SecurityConfig {
                 .authorizeHttpRequests(auth->auth
                         .requestMatchers("/auth/**").permitAll()
                         .requestMatchers("/swagger-ui/**").permitAll()
+
+                        .requestMatchers("/api/client/**").hasRole("ADMIN")
+                        .requestMatchers("/api/doctor/**").hasRole("ADMIN")
+                        .requestMatchers("/api/medicalFile/**").hasRole("ADMIN")
+
+                        .requestMatchers("/api/appointment/doctor/**").hasAnyRole("ADMIN","DOCTOR")
+                        .requestMatchers("/api/appointment/patient/**").hasAnyRole("ADMIN","PATIENT")
+
                         .anyRequest().authenticated())
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())

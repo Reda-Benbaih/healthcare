@@ -23,6 +23,7 @@ public class AuthenticationService {
         User user = User.builder()
                 .username(registerRequest.getUsername())
                 .email(registerRequest.getEmail())
+                .userRoles(registerRequest.getUserRoles())
                 .password(passwordEncoder.encode(registerRequest.getPassword()))
                 .build();
 

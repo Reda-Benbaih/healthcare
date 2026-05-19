@@ -26,11 +26,14 @@ public class User implements UserDetails {
     @Column(unique = true)
     private String email;
 
+    @Enumerated(EnumType.STRING)
+    private UserRoles userRoles;
+
     private String password;
 
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return List.of();
+        return List.of(() -> "ROLE_" + userRoles.name());
     }
 
     @Override
