@@ -11,6 +11,8 @@ import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.AppointmentRepository;
 import org.example.healthcare.repositories.DoctorRepository;
 import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -71,5 +73,10 @@ public class AppointmentService {
         return appointmentRepository.findByDoctorId(id).stream()
                 .map(appointment -> appointmentMapper.toDTO(appointment))
                 .toList();
+    }
+
+    public Page<AppointmentResponseDTO> getAppointments(Pageable pageable){
+        return appointmentRepository.findAll(pageable)
+                .map(appointmentMapper::toDTO);
     }
 }

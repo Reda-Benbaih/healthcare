@@ -5,6 +5,8 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.AppointmentRequestDTO;
 import org.example.healthcare.DTO.response.AppointmentResponseDTO;
 import org.example.healthcare.services.AppointmentService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -48,5 +50,10 @@ public class AppointmentController {
     @GetMapping("/doctor/{id}")
     public ResponseEntity<List<AppointmentResponseDTO>> showAllAppointmentByDoctorId(@PathVariable Integer id){
         return ResponseEntity.ok(appointmentService.showAllAppointmentByDoctorId(id));
+    }
+
+    @GetMapping
+    public ResponseEntity<Page<AppointmentResponseDTO>> showAllAppointments(Pageable pageable){
+        return ResponseEntity.ok(appointmentService.getAppointments(pageable));
     }
 }

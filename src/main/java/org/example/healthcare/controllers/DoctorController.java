@@ -5,6 +5,8 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.DoctorRequestDTO;
 import org.example.healthcare.DTO.response.DoctorResponseDTO;
 import org.example.healthcare.services.DoctorService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -38,5 +40,10 @@ public class DoctorController {
     public ResponseEntity<DoctorResponseDTO> updateDoctor(@PathVariable Integer id, @Valid @RequestBody DoctorRequestDTO doctorRequestDTO){
         DoctorResponseDTO response = doctorService.updateDoctor(id, doctorRequestDTO);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    public ResponseEntity<Page<DoctorResponseDTO>> showDoctors(Pageable pageable){
+        return ResponseEntity.ok(doctorService.getDoctors(pageable));
     }
 }

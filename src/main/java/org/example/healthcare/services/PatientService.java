@@ -7,6 +7,8 @@ import org.example.healthcare.DTO.response.PatientResponseDTO;
 import org.example.healthcare.mapper.PatientMapper;
 import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -54,6 +56,10 @@ public class PatientService {
 
         return patientMapper.toDTO(patient);
 
+    }
+    public Page<PatientResponseDTO> getPatients(Pageable pageable){
+        return patientRepository.findAll(pageable)
+                .map(patientMapper::toDTO);
     }
 
 

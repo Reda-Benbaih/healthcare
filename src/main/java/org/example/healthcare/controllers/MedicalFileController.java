@@ -5,6 +5,8 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.services.MedicalFileService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -30,5 +32,10 @@ public class MedicalFileController {
     public ResponseEntity<MedicalFileResponseDTO> updateMedicalFile(@PathVariable Integer id, @Valid @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
         MedicalFileResponseDTO response = medicalFileService.updateMedicalFile(id, medicalFileRequestDTO);
         return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    public ResponseEntity<Page<MedicalFileResponseDTO>> showAllMedicalFiles(Pageable pageable){
+        return ResponseEntity.ok(medicalFileService.getMedicalFiles(pageable));
     }
 }

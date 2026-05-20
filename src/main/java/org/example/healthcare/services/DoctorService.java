@@ -5,9 +5,12 @@ import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.DoctorRequestDTO;
 import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.DTO.response.PatientResponseDTO;
 import org.example.healthcare.mapper.DoctorMapper;
 import org.example.healthcare.model.Doctor;
 import org.example.healthcare.repositories.DoctorRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -45,5 +48,10 @@ public class DoctorService {
         doctorMapper.updateEntityFromDTO(doctorRequestDTO,doctor);
 
         return doctorMapper.toDTO(doctor);
+    }
+
+    public Page<DoctorResponseDTO> getDoctors(Pageable pageable){
+        return doctorRepository.findAll(pageable)
+                .map(doctorMapper::toDTO);
     }
 }

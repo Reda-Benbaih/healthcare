@@ -3,12 +3,15 @@ package org.example.healthcare.services;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.mapper.MedicalFileMapper;
 import org.example.healthcare.model.MedicalFile;
 import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.MedicalFileRepository;
 import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -43,5 +46,9 @@ public class MedicalFileService {
         medicalFileMapper.updateEntityFromDTO(medicalFileRequestDTO,medicalFile);
 
         return medicalFileMapper.toDTO(medicalFile);
+    }
+    public Page<MedicalFileResponseDTO> getMedicalFiles(Pageable pageable){
+        return medicalFileRepository.findAll(pageable)
+                .map(medicalFileMapper::toDTO);
     }
 }
