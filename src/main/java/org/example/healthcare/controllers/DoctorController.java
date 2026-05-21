@@ -46,4 +46,18 @@ public class DoctorController {
     public ResponseEntity<Page<DoctorResponseDTO>> showDoctors(Pageable pageable){
         return ResponseEntity.ok(doctorService.getDoctors(pageable));
     }
+
+    @GetMapping("/search")
+    public ResponseEntity<Page<DoctorResponseDTO>>
+    searchDoctors(
+            @RequestParam String speciality,
+            Pageable pageable
+    ){
+        return ResponseEntity.ok(
+                doctorService.searchDoctors(
+                        speciality,
+                        pageable
+                )
+        );
+    }
 }

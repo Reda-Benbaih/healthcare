@@ -79,4 +79,10 @@ public class AppointmentService {
         return appointmentRepository.findAll(pageable)
                 .map(appointmentMapper::toDTO);
     }
+
+    public Page<AppointmentResponseDTO> searchAppointments(String name, Pageable pageable){
+        return appointmentRepository
+                .findByStatusContainingIgnoreCase(name, pageable)
+                .map(appointmentMapper::toDTO);
+    }
 }

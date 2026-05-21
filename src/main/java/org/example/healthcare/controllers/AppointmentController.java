@@ -56,4 +56,9 @@ public class AppointmentController {
     public ResponseEntity<Page<AppointmentResponseDTO>> showAllAppointments(Pageable pageable){
         return ResponseEntity.ok(appointmentService.getAppointments(pageable));
     }
+
+    @GetMapping("/search")
+    public ResponseEntity<Page<AppointmentResponseDTO>> searchAppointments(@RequestParam String status, Pageable pageable){
+        return ResponseEntity.ok(appointmentService.searchAppointments(status, pageable));
+    }
 }

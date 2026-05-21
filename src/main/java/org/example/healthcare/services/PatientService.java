@@ -62,5 +62,9 @@ public class PatientService {
                 .map(patientMapper::toDTO);
     }
 
+    public Page<PatientResponseDTO> searchPatients(String name, Pageable pageable){
+        return patientRepository.findByFirstNameContainingIgnoreCase(name, pageable)
+                .map(patientMapper::toDTO);
+    }
 
 }

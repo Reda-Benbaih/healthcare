@@ -25,10 +25,6 @@ public class PatientController {
         return ResponseEntity.status(HttpStatus.CREATED).body(response);
     }
 
-    @GetMapping
-    public ResponseEntity<List<PatientResponseDTO>> showAllPatient(){
-        return ResponseEntity.ok(patientService.showAllPatients());
-    }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deletePatient(@PathVariable Integer id){
@@ -48,7 +44,13 @@ public class PatientController {
     }
 
     @GetMapping
-    public ResponseEntity<Page<PatientResponseDTO>> showAllPatient(Pageable pageable){
+    public ResponseEntity<Page<PatientResponseDTO>> showAllPatients(Pageable pageable){
         return ResponseEntity.ok(patientService.getPatients(pageable));
+    }
+
+    @GetMapping("/search")
+    public ResponseEntity<Page<PatientResponseDTO>>
+    searchPatients(@RequestParam String name, Pageable pageable){
+        return ResponseEntity.ok(patientService.searchPatients(name,pageable));
     }
 }

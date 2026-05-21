@@ -1,6 +1,8 @@
 package org.example.healthcare.repositories;
 
 import org.example.healthcare.model.Appointment;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
@@ -11,5 +13,7 @@ public interface AppointmentRepository extends JpaRepository<Appointment,Integer
     List<Appointment> findByPatientId(Integer id);
 
     List<Appointment> findByDoctorId(Integer id);
+
+    Page<Appointment> findByStatusContainingIgnoreCase(String name, Pageable pageable);
 
 }
