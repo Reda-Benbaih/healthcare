@@ -22,6 +22,12 @@ public class DoctorService {
     private final DoctorRepository doctorRepository;
     private final DoctorMapper doctorMapper;
 
+    public boolean isDoctorOwner(Integer doctorId, String currentUserEmail) {
+        return doctorRepository.findById(doctorId)
+                .map(doctor -> doctor.getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
     @Transactional
     public DoctorResponseDTO addDoctor(DoctorRequestDTO doctorRequestDTO){
         Doctor doctor = doctorMapper.toEntity(doctorRequestDTO);

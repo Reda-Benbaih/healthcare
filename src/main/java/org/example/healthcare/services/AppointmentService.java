@@ -25,6 +25,18 @@ public class AppointmentService {
     private final DoctorRepository doctorRepository;
     private final PatientRepository patientRepository;
 
+    public boolean isPatientAppointmentOwner(Integer appointmentId, String currentUserEmail) {
+        return appointmentRepository.findById(appointmentId)
+                .map(app -> app.getPatient() != null && app.getPatient().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    public boolean isDoctorAppointmentOwner(Integer appointmentId, String currentUserEmail) {
+        return appointmentRepository.findById(appointmentId)
+                .map(app -> app.getDoctor() != null && app.getDoctor().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
     @Transactional
     public AppointmentResponseDTO createAppointment(AppointmentRequestDTO appointmentRequestDTO){
         Doctor doctor = doctorRepository.findById(appointmentRequestDTO.getDoctorId())

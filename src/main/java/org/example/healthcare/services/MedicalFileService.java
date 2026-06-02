@@ -21,6 +21,12 @@ public class MedicalFileService {
     private final MedicalFileRepository medicalFileRepository;
     private final PatientRepository patientRepository;
 
+    public boolean isMedicalFileOwner(Integer fileId, String currentUserEmail) {
+        return medicalFileRepository.findById(fileId)
+                .map(file -> file.getPatient() != null && file.getPatient().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
     @Transactional
     public MedicalFileResponseDTO addMedicalFile(MedicalFileRequestDTO medicalFileRequestDTO){
         Patient patient = patientRepository.findById(medicalFileRequestDTO.getPatientId())

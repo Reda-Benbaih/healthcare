@@ -7,16 +7,13 @@ import java.util.List;
 
 @Entity
 @Table(name = "doctor")
+@PrimaryKeyJoinColumn(name = "id")
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
-@Builder
-public class Doctor {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+@lombok.experimental.SuperBuilder
+public class Doctor extends User {
 
     private String name;
     private String speciality;
-    private String email;
     private Long phone;
 
     @OneToMany(mappedBy = "doctor" ,cascade = CascadeType.ALL)

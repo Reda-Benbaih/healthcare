@@ -21,6 +21,13 @@ public class PatientService {
     private final PatientRepository patientRepository;
     private final PatientMapper patientMapper;
 
+
+    public boolean isPatientOwner(Integer patientId, String currentUserEmail) {
+        return patientRepository.findById(patientId)
+                .map(patient -> patient.getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
     @Transactional
     public PatientResponseDTO addPatient(PatientRequestDTO patientRequestDTO){
         Patient patient = patientMapper.toEntity(patientRequestDTO);

@@ -1,0 +1,42 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: healthcare-mysql-2
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: healthcare
+      MYSQL_ROOT_PASSWORD: 123456789
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p123456789"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  healthcare-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: healthcare-api
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/healthcare?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+      MYSQL_DATABASE: healthcare
+      MYSQL_ROOT_PASSWORD: 123456789
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:
+
+  #.\mvnw.cmd clean package -DskipTests
+  #docker compose up --build

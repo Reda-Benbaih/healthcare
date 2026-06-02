@@ -8,7 +8,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -16,6 +18,8 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
+@EnableWebSecurity
+@EnableMethodSecurity
 @RequiredArgsConstructor
 public class SecurityConfig {
     private final UserInfoService userInfoService;
@@ -45,18 +49,19 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http)throws  Exception{
         http.csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable())
                 .authorizeHttpRequests(auth->auth
-                        .requestMatchers("/auth/**").permitAll()
-                        .requestMatchers("/swagger-ui/**").permitAll()
+                        .requestMatchers("/auth/register", "/auth/login","/swagger-ui/**").permitAll()
 
-                        .requestMatchers("/api/patient/**").hasRole("ADMIN")
-                        .requestMatchers("/api/client/**").hasRole("ADMIN")
-                        .requestMatchers("/api/doctor/**").hasRole("ADMIN")
-                        .requestMatchers("/api/medicalFile/**").hasRole("ADMIN")
+                        // L'ADMIN a accès à tout
+                        .requestMatchers("/api/users/**").hasRole("ADMIN")
 
-                        .requestMatchers("/api/appointment/doctor/**").hasAnyRole("ADMIN","DOCTOR")
-                        .requestMatchers("/api/appointment/patient/**").hasAnyRole("ADMIN","PATIENT")
+                        // Accès partagés ou spécifiques aux Médecins / Patients
+                        .requestMatchers("/api/patient/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
+                        .requestMatchers("/api/doctor/**").hasAnyRole("ADMIN", "MEDECIN")
+                        .requestMatchers("/api/appointment/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
+                        .requestMatchers("/api/medicalFile/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
 
-                        .anyRequest().authenticated())
+                        .anyRequest().authenticated()
+                )
                 .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())
                 .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);

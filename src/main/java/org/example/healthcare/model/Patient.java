@@ -9,16 +9,13 @@ import java.util.List;
 
 @Entity
 @Table(name = "patient")
+@PrimaryKeyJoinColumn(name = "id")
 @Getter @Setter @AllArgsConstructor @NoArgsConstructor
-@Builder
-public class Patient {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+@lombok.experimental.SuperBuilder
+public class Patient extends User{
 
     private String firstName;
     private String lastName;
-    private String email;
     private Long phone;
     private LocalDate birthDay;
 
