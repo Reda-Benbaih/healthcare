@@ -61,15 +61,8 @@ public class DoctorService {
                 .map(doctorMapper::toDTO);
     }
 
-    public Page<DoctorResponseDTO> searchDoctors(
-            String name,
-            Pageable pageable
-    ){
-        return doctorRepository
-                .findBySpecialityContainingIgnoreCase(
-                        name,
-                        pageable
-                )
+    public Page<DoctorResponseDTO> searchDoctors(String name, Pageable pageable){
+        return doctorRepository.findBySpecialityContainingIgnoreCase(name, pageable)
                 .map(doctorMapper::toDTO);
     }
 }

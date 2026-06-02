@@ -55,10 +55,10 @@ public class SecurityConfig {
                         .requestMatchers("/api/users/**").hasRole("ADMIN")
 
                         // Accès partagés ou spécifiques aux Médecins / Patients
-                        .requestMatchers("/api/patient/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
-                        .requestMatchers("/api/doctor/**").hasAnyRole("ADMIN", "MEDECIN")
-                        .requestMatchers("/api/appointment/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
-                        .requestMatchers("/api/medicalFile/**").hasAnyRole("ADMIN", "MEDECIN", "PATIENT")
+                        .requestMatchers("/api/patient/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
+                        .requestMatchers("/api/doctor/**").hasAnyRole("ADMIN", "DOCTOR")
+                        .requestMatchers("/api/appointment/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
+                        .requestMatchers("/api/medicalFile/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
 
                         .anyRequest().authenticated()
                 )

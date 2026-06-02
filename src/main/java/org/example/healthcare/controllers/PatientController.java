@@ -7,6 +7,7 @@ import org.example.healthcare.DTO.response.PatientResponseDTO;
 import org.example.healthcare.services.PatientService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
@@ -47,7 +48,9 @@ public class PatientController {
     }
     @GetMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
-    public ResponseEntity<Page<PatientResponseDTO>> showAllPatients(Pageable pageable){
+    public ResponseEntity<Page<PatientResponseDTO>> showAllPatients(
+            @PageableDefault(sort = "lastName", direction = org.springframework.data.domain.Sort.Direction.ASC)
+            Pageable pageable){
         return ResponseEntity.ok(patientService.getPatients(pageable));
     }
     @GetMapping("/search")
