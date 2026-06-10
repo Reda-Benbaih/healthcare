@@ -7,6 +7,8 @@ import org.example.healthcare.DTO.response.PatientResponseDTO;
 import org.example.healthcare.mapper.PatientMapper;
 import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -29,6 +31,7 @@ public class PatientService {
     }
 
     @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
     public PatientResponseDTO addPatient(PatientRequestDTO patientRequestDTO){
         Patient patient = patientMapper.toEntity(patientRequestDTO);
         Patient savedPatient = patientRepository.save(patient);
@@ -43,11 +46,13 @@ public class PatientService {
     }
 
     @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
     public void deletePatient(Integer id){
         patientRepository.deleteById(id);
     }
 
     @Transactional
+    @Cacheable(value = "patients",key = "'patient_' + #id")
     public PatientResponseDTO showPatientById(Integer id){
         Patient patient = patientRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("ce patient avec ce "+id+" n'existe pas"));
@@ -55,6 +60,7 @@ public class PatientService {
     }
 
     @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
     public PatientResponseDTO updatePatient(Integer id,PatientRequestDTO patientRequestDTO){
         Patient patient = patientRepository.findById(id)
                 .orElseThrow(()-> new RuntimeException("ce patient avec ce "+id+" n'existe pas"));
@@ -64,11 +70,14 @@ public class PatientService {
         return patientMapper.toDTO(patient);
 
     }
+    @Cacheable(value = "patients", key = "'page_' + #pageable.pageNumber + '_' + #pageable.pageSize")
     public Page<PatientResponseDTO> getPatients(Pageable pageable){
         return patientRepository.findAll(pageable)
                 .map(patientMapper::toDTO);
     }
 
+    @Transactional
+    @Cacheable(value = "patients", key = "'search_' + #name + '_' + #pageable.pageNumber")
     public Page<PatientResponseDTO> searchPatients(String name, Pageable pageable){
         return patientRepository.findByFirstNameContainingIgnoreCase(name, pageable)
                 .map(patientMapper::toDTO);

@@ -11,6 +11,8 @@ import org.example.healthcare.model.Patient;
 import org.example.healthcare.repositories.AppointmentRepository;
 import org.example.healthcare.repositories.DoctorRepository;
 import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -38,6 +40,14 @@ public class AppointmentService {
     }
 
     @Transactional
+    public List<AppointmentResponseDTO> showAllAppointment(){
+        return appointmentRepository.findAll().stream()
+                .map(appointment -> appointmentMapper.toDTO(appointment))
+                .toList();
+    }
+
+    @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
     public AppointmentResponseDTO createAppointment(AppointmentRequestDTO appointmentRequestDTO){
         Doctor doctor = doctorRepository.findById(appointmentRequestDTO.getDoctorId())
                 .orElseThrow(() -> new RuntimeException("medecin non touve avec l'id : " + appointmentRequestDTO.getDoctorId()));
@@ -55,6 +65,7 @@ public class AppointmentService {
     }
 
     @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
     public AppointmentResponseDTO updateAppointment(Integer id , AppointmentRequestDTO appointmentRequestDTO) {
         Appointment appointment = appointmentRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("ce rendez-vous avec id " + id + " n'existe pas"));
@@ -63,35 +74,38 @@ public class AppointmentService {
     }
 
     @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
     public void deleteAppointment(Integer id){
         appointmentRepository.deleteById(id);
     }
 
-    @Transactional
-    public List<AppointmentResponseDTO> showAllAppointment(){
-        return appointmentRepository.findAll().stream()
-                .map(appointment -> appointmentMapper.toDTO(appointment))
-                .toList();
-    }
+
 
     @Transactional
+    @Cacheable(value = "appointments", key = "'patient_' + #id")
     public List<AppointmentResponseDTO> showAllAppointmentByPatientId(Integer id){
         return appointmentRepository.findByPatientId(id).stream()
                 .map(appointment -> appointmentMapper.toDTO(appointment))
                 .toList();
     }
 
+    @Transactional
+    @Cacheable(value = "appointments", key = "'doctor_' + #id")
     public List<AppointmentResponseDTO> showAllAppointmentByDoctorId(Integer id){
         return appointmentRepository.findByDoctorId(id).stream()
                 .map(appointment -> appointmentMapper.toDTO(appointment))
                 .toList();
     }
 
+    @Transactional
+    @Cacheable(value = "appointments", key = "'page_' + #pageable.pageNumber + '_' + #pageable.pageSize")
     public Page<AppointmentResponseDTO> getAppointments(Pageable pageable){
         return appointmentRepository.findAll(pageable)
                 .map(appointmentMapper::toDTO);
     }
 
+    @Transactional
+    @Cacheable(value = "appointments", key = "'search_' + #name + '_' + #pageable.pageNumber")
     public Page<AppointmentResponseDTO> searchAppointments(String name, Pageable pageable){
         return appointmentRepository
                 .findByStatusContainingIgnoreCase(name, pageable)
