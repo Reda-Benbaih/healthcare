@@ -5,18 +5,23 @@ import lombok.RequiredArgsConstructor;
 import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
 import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
 import org.example.healthcare.services.MedicalFileService;
+import org.example.healthcare.services.PdfGenerationService;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
+import org.example.healthcare.services.PdfGenerationService;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.MediaType;
 
 @RestController
 @RequestMapping("/api/medicalFile")
 @RequiredArgsConstructor
 public class MedicalFileController {
     private final MedicalFileService medicalFileService;
+    private final PdfGenerationService pdfGenerationService;
 
     @PostMapping
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
@@ -42,5 +47,20 @@ public class MedicalFileController {
     @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
     public ResponseEntity<Page<MedicalFileResponseDTO>> showAllMedicalFiles(Pageable pageable){
         return ResponseEntity.ok(medicalFileService.getMedicalFiles(pageable));
+    }
+
+    @GetMapping("/{id}/download")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR') or @medicalFileService.isMedicalFileOwner(#id, authentication.name)")
+    public ResponseEntity<byte[]> downloadMedicalFilePdf(@PathVariable Integer id) {
+        MedicalFileResponseDTO medicalFile = medicalFileService.showMedicalFileById(id);
+        byte[] pdfBytes = pdfGenerationService.generateMedicalFilePdf(medicalFile);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_PDF);
+        headers.setContentDispositionFormData("attachment", "dossier_medical_" + id + ".pdf");
+
+        return ResponseEntity.ok()
+                .headers(headers)
+                .body(pdfBytes);
     }
 }

@@ -1,0 +1,2860 @@
+﻿
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\compiler.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+      </profile>
+      <profile name="Annotation profile for HealthCare" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.32/lombok-1.18.32.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
+        </processorPath>
+        <module name="HealthCare" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="HealthCare" options="-parameters" />
+    </option>
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\encodings.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\jarRepositories.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteRepositoriesConfiguration">
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Maven Central repository" />
+      <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="jboss.community" />
+      <option name="name" value="JBoss Community repository" />
+      <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\misc.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_21" default="true" project-jdk-name="21" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\vcs.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.idea\workspace.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="54e93639-606b-4974-afae-d383c9e1a7dd" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/HealthCareApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/HealthCareApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/repositories/PatientRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/repositories/PatientRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/AppointmentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/DoctorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/DoctorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/PatientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/healthcare/services/PatientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
+        <option value="Enum" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
+  <component name="ProjectId" id="3CnYuOUqte495yD7KaMbmBUOE8b" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.AppointmentServiceTest.createAppointment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppointmentServiceTest.showAllAppointment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppointmentServiceTest.showAllAppointmentByPatientId.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.AppointmentServiceTest.updateAppointment.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.HealthCareApplication.executor&quot;: &quot;Run&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;reda__branch&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.example.healthcare.services" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.example.healthcare.services" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HealthCareApplication">
+    <configuration name="AppointmentServiceTest.createAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthCare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.healthcare.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.healthcare.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.healthcare.services.AppointmentServiceTest" />
+      <option name="METHOD_NAME" value="createAppointment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentServiceTest.showAllAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthCare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.healthcare.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.healthcare.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.healthcare.services.AppointmentServiceTest" />
+      <option name="METHOD_NAME" value="showAllAppointment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentServiceTest.showAllAppointmentByPatientId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthCare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.healthcare.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.healthcare.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.healthcare.services.AppointmentServiceTest" />
+      <option name="METHOD_NAME" value="showAllAppointmentByPatientId" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AppointmentServiceTest.updateAppointment" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="HealthCare" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.healthcare.services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.healthcare.services" />
+      <option name="MAIN_CLASS_NAME" value="org.example.healthcare.services.AppointmentServiceTest" />
+      <option name="METHOD_NAME" value="updateAppointment" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HealthCareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UnknownPolicyInFreeMode" />
+      <module name="HealthCare" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.example.healthcare.HealthCareApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.healthcare.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.HealthCareApplication" />
+        <item itemvalue="JUnit.AppointmentServiceTest.updateAppointment" />
+        <item itemvalue="JUnit.AppointmentServiceTest.showAllAppointmentByPatientId" />
+        <item itemvalue="JUnit.AppointmentServiceTest.showAllAppointment" />
+        <item itemvalue="JUnit.AppointmentServiceTest.createAppointment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="54e93639-606b-4974-afae-d383c9e1a7dd" name="Changes" comment="" />
+      <created>1777023025049</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1777023025049</updated>
+    </task>
+    <servers />
+  </component>
+</project>
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\.mvn\wrapper\maven-wrapper.properties =====
+
+wrapperVersion=3.3.4
+distributionType=only-script
+distributionUrl=https://repo.maven.apache.org/maven2/org/apache/maven/apache-maven/3.9.14/apache-maven-3.9.14-bin.zip
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\config\SecurityConfig.java =====
+
+package org.example.healthcare.config;
+
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.Security.JwtAuthenticationFilter;
+import org.example.healthcare.services.UserInfoService;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
+@Configuration
+@EnableWebSecurity
+@EnableMethodSecurity
+@RequiredArgsConstructor
+public class SecurityConfig {
+    private final UserInfoService userInfoService;
+    private final JwtAuthenticationFilter jwtAuthenticationFilter;
+
+    @Bean
+    public PasswordEncoder passwordEncoder(){
+        return new BCryptPasswordEncoder();
+    }
+
+    @Bean
+    public DaoAuthenticationProvider authenticationProvider(){
+        DaoAuthenticationProvider provider = new DaoAuthenticationProvider();
+
+        provider.setUserDetailsService(userInfoService);
+        provider.setPasswordEncoder(passwordEncoder());
+
+        return provider;
+    }
+
+    @Bean
+    public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration)throws Exception{
+        return configuration.getAuthenticationManager();
+    }
+
+    @Bean
+    public SecurityFilterChain securityFilterChain(HttpSecurity http)throws  Exception{
+        http.csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable())
+                .authorizeHttpRequests(auth->auth
+                        .requestMatchers("/auth/register", "/auth/login","/swagger-ui/**").permitAll()
+
+                        // L'ADMIN a accÃ¨s Ã  tout
+                        .requestMatchers("/api/users/**").hasRole("ADMIN")
+
+                        // AccÃ¨s partagÃ©s ou spÃ©cifiques aux MÃ©decins / Patients
+                        .requestMatchers("/api/patient/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
+                        .requestMatchers("/api/doctor/**").hasAnyRole("ADMIN", "DOCTOR")
+                        .requestMatchers("/api/appointment/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
+                        .requestMatchers("/api/medicalFile/**").hasAnyRole("ADMIN", "DOCTOR", "PATIENT")
+
+                        .anyRequest().authenticated()
+                )
+                .sessionManagement(session-> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .authenticationProvider(authenticationProvider())
+                .addFilterBefore(jwtAuthenticationFilter, UsernamePasswordAuthenticationFilter.class);
+        return http.build();
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\controllers\AppointmentController.java =====
+
+package org.example.healthcare.controllers;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.AppointmentRequestDTO;
+import org.example.healthcare.DTO.response.AppointmentResponseDTO;
+import org.example.healthcare.services.AppointmentService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/appointment")
+@RequiredArgsConstructor
+public class AppointmentController {
+    private final AppointmentService appointmentService;
+
+    @PostMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
+    public ResponseEntity<AppointmentResponseDTO> createAppointment(@Valid @RequestBody AppointmentRequestDTO appointmentRequestDTO){
+        AppointmentResponseDTO response = appointmentService.createAppointment(appointmentRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') " +
+            "or (hasRole('PATIENT') and @appointmentService.isPatientAppointmentOwner(#id, authentication.name)) " +
+            "or (hasRole('DOCTOR') and @appointmentService.isDoctorAppointmentOwner(#id, authentication.name))")
+    public ResponseEntity<AppointmentResponseDTO> updateAppointment(@PathVariable Integer id, @Valid @RequestBody AppointmentRequestDTO appointmentRequestDTO){
+        AppointmentResponseDTO response = appointmentService.updateAppointment(id, appointmentRequestDTO);
+        return ResponseEntity.ok(response);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Void> deleteAppointment(@PathVariable Integer id){
+        appointmentService.deleteAppointment(id);
+        return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/patient/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR') or (hasRole('PATIENT') and @patientService.isPatientOwner(#id, authentication.name))")
+    public ResponseEntity<List<AppointmentResponseDTO>> showAllAppointmentByPatientId(@PathVariable Integer id){
+        return ResponseEntity.ok(appointmentService.showAllAppointmentByPatientId(id));
+    }
+
+    @GetMapping("/doctor/{id}")
+    @PreAuthorize("hasRole('ADMIN') or (hasRole('DOCTOR') and @doctorService.isDoctorOwner(#id, authentication.name))")
+    public ResponseEntity<List<AppointmentResponseDTO>> showAllAppointmentByDoctorId(@PathVariable Integer id){
+        return ResponseEntity.ok(appointmentService.showAllAppointmentByDoctorId(id));
+    }
+
+    @GetMapping
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Page<AppointmentResponseDTO>> showAllAppointments(
+            @PageableDefault(sort = "appointmentDate", direction = org.springframework.data.domain.Sort.Direction.DESC)
+            Pageable pageable){
+        return ResponseEntity.ok(appointmentService.getAppointments(pageable));
+    }
+
+    @GetMapping("/search")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Page<AppointmentResponseDTO>> searchAppointments(@RequestParam String status, Pageable pageable){
+        return ResponseEntity.ok(appointmentService.searchAppointments(status, pageable));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\controllers\AuthController.java =====
+
+package org.example.healthcare.controllers;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.user.AuthResponse;
+import org.example.healthcare.DTO.user.LoginRequest;
+import org.example.healthcare.DTO.user.RegisterRequest;
+import org.example.healthcare.services.AuthenticationService;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/auth")
+@RequiredArgsConstructor
+public class AuthController {
+    private final AuthenticationService authenticationService;
+
+    @PostMapping("/register")
+    public AuthResponse register(@Valid @RequestBody RegisterRequest registerRequest){
+        return authenticationService.register(registerRequest);
+    }
+
+    @PostMapping("/login")
+    public AuthResponse login(@Valid @RequestBody LoginRequest loginRequest){
+        return authenticationService.login(loginRequest);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\controllers\DoctorController.java =====
+
+package org.example.healthcare.controllers;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.DoctorRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.services.DoctorService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/doctor")
+@RequiredArgsConstructor
+public class DoctorController {
+    private final DoctorService doctorService;
+
+    @PostMapping
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<DoctorResponseDTO> addDoctor(@Valid @RequestBody DoctorRequestDTO doctorRequestDTO){
+        DoctorResponseDTO response = doctorService.addDoctor(doctorRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Void> deleteDoctor(@PathVariable Integer id){
+        doctorService.deleteDoctor(id);
+        return ResponseEntity.noContent().build();
+    }
+
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN') or @doctorService.isDoctorOwner(#id, authentication.name)")
+    public ResponseEntity<DoctorResponseDTO> updateDoctor(@PathVariable Integer id, @Valid @RequestBody DoctorRequestDTO doctorRequestDTO){
+        DoctorResponseDTO response = doctorService.updateDoctor(id, doctorRequestDTO);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
+    public ResponseEntity<Page<DoctorResponseDTO>> showDoctors(
+            @PageableDefault(sort = "speciality", direction = org.springframework.data.domain.Sort.Direction.ASC)
+            Pageable pageable){
+        return ResponseEntity.ok(doctorService.getDoctors(pageable));
+    }
+
+    @GetMapping("/search")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR', 'PATIENT')")
+    public ResponseEntity<Page<DoctorResponseDTO>> searchDoctors(@RequestParam String speciality, Pageable pageable){
+        return ResponseEntity.ok(doctorService.searchDoctors(speciality, pageable));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\controllers\MedicalFileController.java =====
+
+package org.example.healthcare.controllers;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
+import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
+import org.example.healthcare.services.MedicalFileService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+@RestController
+@RequestMapping("/api/medicalFile")
+@RequiredArgsConstructor
+public class MedicalFileController {
+    private final MedicalFileService medicalFileService;
+
+    @PostMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<MedicalFileResponseDTO> addMedicalFile(@Valid @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
+        MedicalFileResponseDTO response = medicalFileService.addMedicalFile(medicalFileRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR') or @medicalFileService.isMedicalFileOwner(#id, authentication.name)")
+    public ResponseEntity<MedicalFileResponseDTO> showMedicalFileById(@PathVariable Integer id){
+        return ResponseEntity.ok(medicalFileService.showMedicalFileById(id));
+    }
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<MedicalFileResponseDTO> updateMedicalFile(@PathVariable Integer id, @Valid @RequestBody MedicalFileRequestDTO medicalFileRequestDTO){
+        MedicalFileResponseDTO response = medicalFileService.updateMedicalFile(id, medicalFileRequestDTO);
+        return ResponseEntity.ok(response);
+    }
+
+    @GetMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<Page<MedicalFileResponseDTO>> showAllMedicalFiles(Pageable pageable){
+        return ResponseEntity.ok(medicalFileService.getMedicalFiles(pageable));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\controllers\PatientController.java =====
+
+package org.example.healthcare.controllers;
+
+import jakarta.validation.Valid;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.PatientRequestDTO;
+import org.example.healthcare.DTO.response.PatientResponseDTO;
+import org.example.healthcare.services.PatientService;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.web.PageableDefault;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/api/patient")
+@RequiredArgsConstructor
+public class PatientController {
+    private final PatientService patientService;
+
+    @PostMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<PatientResponseDTO> addPatient(@Valid @RequestBody PatientRequestDTO patientRequestDTO){
+        PatientResponseDTO response = patientService.addPatient(patientRequestDTO);
+        return ResponseEntity.status(HttpStatus.CREATED).body(response);
+    }
+
+    @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
+    public ResponseEntity<Void> deletePatient(@PathVariable Integer id){
+        patientService.deletePatient(id);
+        return ResponseEntity.noContent().build();
+    }
+    @GetMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<PatientResponseDTO> showPatientById(@PathVariable Integer id){
+        return ResponseEntity.ok(patientService.showPatientById(id));
+    }
+
+    @PutMapping("/{id}")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR') or @patientService.isPatientOwner(#id, authentication.name)")
+    public ResponseEntity<PatientResponseDTO> updatePatient(@PathVariable Integer id, @Valid @RequestBody PatientRequestDTO patientRequestDTO){
+        PatientResponseDTO response = patientService.updatePatient(id, patientRequestDTO);
+        return ResponseEntity.ok(response);
+    }
+    @GetMapping
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<Page<PatientResponseDTO>> showAllPatients(
+            @PageableDefault(sort = "lastName", direction = org.springframework.data.domain.Sort.Direction.ASC)
+            Pageable pageable){
+        return ResponseEntity.ok(patientService.getPatients(pageable));
+    }
+    @GetMapping("/search")
+    @PreAuthorize("hasAnyRole('ADMIN', 'DOCTOR')")
+    public ResponseEntity<Page<PatientResponseDTO>> searchPatients(@RequestParam String name, Pageable pageable){
+        return ResponseEntity.ok(patientService.searchPatients(name,pageable));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\request\AppointmentRequestDTO.java =====
+
+package org.example.healthcare.DTO.request;
+
+import jakarta.validation.constraints.Future;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class AppointmentRequestDTO {
+    @NotNull(message = "la date necessaire")
+    @Future(message = "must be in future")
+    private LocalDate appointmentDate;
+    @NotBlank(message = "le status necessaire")
+    private String status;
+    @NotNull(message = "id de doctor necessaire")
+    @Positive(message = "positive number")
+    private Integer doctorId;
+    @NotNull(message = "id de patient necessaire")
+    @Positive(message = "positive number")
+    private Integer patientId;
+}
+
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\request\DoctorRequestDTO.java =====
+
+package org.example.healthcare.DTO.request;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+@Builder
+public class DoctorRequestDTO {
+    @NotBlank(message = " le nom necessaire")
+    private String name;
+    @NotBlank(message = "la specialite necessaire")
+    private String speciality;
+    @NotBlank(message = "email necessaire")
+    @Email(message = "email invalid")
+    private String email;
+    @NotNull(message = "telephone necessaire")
+    private Long phone;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\request\MedicalFileRequestDTO.java =====
+
+package org.example.healthcare.DTO.request;
+
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import jakarta.validation.constraints.Positive;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class MedicalFileRequestDTO {
+    @NotBlank(message = "diagnostic necessaire")
+    private String diagnosis;
+    @NotBlank(message = "observation necessaire")
+    private String observation;
+    @NotNull(message = "la date de creation necessair")
+    private LocalDate creationDate;
+    @NotNull(message = "id patient necessaire")
+    @Positive(message = "id patient necessaire")
+    private Integer patientId;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\request\PatientRequestDTO.java =====
+
+package org.example.healthcare.DTO.request;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Past;
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class PatientRequestDTO {
+    @NotBlank(message = "first name necessaire")
+    private String firstName;
+    @NotBlank(message = "last name necesssaire")
+    private String lastName;
+    @NotNull(message = "email necessaire")
+    @Email(message = "email invalid")
+    private String email;
+    @NotNull(message = "telephone necessaire")
+    private Long phone;
+    @NotNull(message = "birth dat necessaire")
+    @Past(message = "it should be in past")
+    private LocalDate birthDay;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\response\AppointmentResponseDTO.java =====
+
+package org.example.healthcare.DTO.response;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class AppointmentResponseDTO {
+    private Integer id;
+    private LocalDate appointmentDate;
+    private String status;
+    private Integer doctorId;
+    private Integer patientId;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\response\DoctorResponseDTO.java =====
+
+package org.example.healthcare.DTO.response;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter @Setter
+@Builder
+public class DoctorResponseDTO {
+    private Integer id;
+    private String name;
+    private String speciality;
+    private String email;
+    private Long phone;
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\response\MedicalFileResponseDTO.java =====
+
+package org.example.healthcare.DTO.response;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class MedicalFileResponseDTO {
+    private Integer id;
+    private String diagnosis;
+    private String observation;
+    private LocalDate creationDate;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\response\PatientResponseDTO.java =====
+
+package org.example.healthcare.DTO.response;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
+
+import java.time.LocalDate;
+
+@Getter @Setter
+@Builder
+public class PatientResponseDTO {
+    private Integer id;
+    private String firstName;
+    private String lastName;
+    private Long phone;
+    private LocalDate birthDay;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\user\AuthResponse.java =====
+
+package org.example.healthcare.DTO.user;
+
+import lombok.*;
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class AuthResponse {
+    private String token;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\user\LoginRequest.java =====
+
+package org.example.healthcare.DTO.user;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import lombok.*;
+
+
+@Getter
+@Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
+public class LoginRequest {
+    @Email(message = "Invalid email")
+    @NotBlank(message = "Email is required")
+    private String email;
+    @NotBlank(message = "password necessary")
+    private String password;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\DTO\user\RegisterRequest.java =====
+
+package org.example.healthcare.DTO.user;
+
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
+import lombok.*;
+import org.example.healthcare.model.UserRoles;
+
+@Getter
+@Setter
+@Builder
+@NoArgsConstructor @AllArgsConstructor
+public class RegisterRequest {
+    @NotBlank(message = "Username is required")
+    private String username;
+
+    @Email(message = "invalid email format")
+    @NotBlank(message = "email is required")
+    private String email;
+    @Size(min = 4 ,message = "password shouldve at least 4 characters")
+    private String password;
+
+    @NotNull(message = " role is required")
+    private UserRoles userRoles;
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\exceptions\GlobalExceptionHandler.java =====
+
+package org.example.healthcare.exceptions;
+
+import org.springframework.http.*;
+import org.springframework.security.authentication.BadCredentialsException;
+import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.Map;
+
+@RestControllerAdvice
+public class GlobalExceptionHandler {
+
+    @ExceptionHandler(MethodArgumentNotValidException.class)
+    public ResponseEntity<Map<String, String>>handleValidationException(MethodArgumentNotValidException ex){
+        Map<String, String> errors =new HashMap<>();
+        ex.getBindingResult()
+                .getFieldErrors()
+                .forEach(error ->
+                        errors.put(error.getField(),error.getDefaultMessage())
+                );
+
+        return ResponseEntity
+                .badRequest()
+                .body(errors);
+    }
+
+    @ExceptionHandler(
+            BadCredentialsException.class
+    )
+    public ResponseEntity<String>handleBadCredentials() {
+        return ResponseEntity
+                .status(HttpStatus.UNAUTHORIZED)
+                .body("Invalid email or password");
+    }
+
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<String>handleRuntime(RuntimeException ex) {
+        return ResponseEntity
+                .badRequest()
+                .body(ex.getMessage());
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\mapper\AppointmentMapper.java =====
+
+package org.example.healthcare.mapper;
+
+import org.example.healthcare.DTO.request.AppointmentRequestDTO;
+import org.example.healthcare.DTO.response.AppointmentResponseDTO;
+import org.example.healthcare.model.Appointment;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
+
+@Mapper(componentModel = "spring")
+public interface AppointmentMapper {
+    @Mapping(source = "doctor.id", target = "doctorId")
+    @Mapping(source = "patient.id", target = "patientId")
+    AppointmentResponseDTO toDTO(Appointment appointment);
+
+    @Mapping(target = "doctor",ignore = true)
+    @Mapping(target = "patient",ignore = true)
+    Appointment toEntity(AppointmentRequestDTO appointmentRequestDTO);
+
+    void updateEntityFromDTO(AppointmentRequestDTO appointmentRequestDTO, @MappingTarget Appointment appointment);
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\mapper\DoctorMapper.java =====
+
+package org.example.healthcare.mapper;
+
+import org.example.healthcare.DTO.request.DoctorRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.model.Doctor;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
+
+@Mapper(componentModel = "spring")
+public interface DoctorMapper {
+    DoctorResponseDTO toDTO(Doctor doctor);
+
+    Doctor toEntity(DoctorRequestDTO doctorRequestDTO);
+
+    void updateEntityFromDTO(DoctorRequestDTO doctorRequestDTO, @MappingTarget Doctor doctor);
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\mapper\MedicalFileMapper.java =====
+
+package org.example.healthcare.mapper;
+
+import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
+import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
+import org.example.healthcare.model.MedicalFile;
+import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
+import org.mapstruct.MappingTarget;
+
+@Mapper(componentModel = "spring")
+public interface MedicalFileMapper {
+    MedicalFileResponseDTO toDTO(MedicalFile medicalFile);
+
+    @Mapping(source = "patientId", target = "patient.id")
+    MedicalFile toEntity(MedicalFileRequestDTO medicalFileRequestDTO);
+
+    @Mapping(source = "patientId", target = "patient.id")
+    void updateEntityFromDTO(MedicalFileRequestDTO medicalFileRequestDTO, @MappingTarget MedicalFile medicalFile);
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\mapper\PatientMapper.java =====
+
+package org.example.healthcare.mapper;
+
+import org.example.healthcare.DTO.request.PatientRequestDTO;
+import org.example.healthcare.DTO.response.PatientResponseDTO;
+import org.example.healthcare.model.Patient;
+import org.mapstruct.Mapper;
+import org.mapstruct.MappingTarget;
+
+@Mapper(componentModel = "spring")
+public interface PatientMapper {
+    PatientResponseDTO toDTO(Patient patient);
+
+    Patient toEntity(PatientRequestDTO patientRequestDTO);
+
+    void updateEntityFromDTO(PatientRequestDTO patientRequestDTO, @MappingTarget Patient patient);
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\Appointment.java =====
+
+package org.example.healthcare.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "appointment")
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@Builder
+public class Appointment {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private LocalDate appointmentDate;
+    private String status;
+
+    @ManyToOne
+    @JoinColumn(name = "doctor_id")
+    private Doctor doctor;
+
+    @ManyToOne
+    @JoinColumn(name = "patient_id")
+    private Patient patient;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\Doctor.java =====
+
+package org.example.healthcare.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.util.List;
+
+@Entity
+@Table(name = "doctor")
+@PrimaryKeyJoinColumn(name = "id")
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@lombok.experimental.SuperBuilder
+public class Doctor extends User {
+
+    private String name;
+    private String speciality;
+    private Long phone;
+
+    @OneToMany(mappedBy = "doctor" ,cascade = CascadeType.ALL)
+    private List<Appointment> appointmentList;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\MedicalFile.java =====
+
+package org.example.healthcare.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+import java.time.LocalDate;
+
+@Entity
+@Table(name = "medical_file")
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@Builder
+public class MedicalFile {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+    private String diagnosis;
+    private String observation;
+    private LocalDate creationDate;
+
+    @OneToOne
+    @JoinColumn(name = "patient_id", referencedColumnName = "id")
+    private Patient patient;
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\Patient.java =====
+
+package org.example.healthcare.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+
+
+import java.time.LocalDate;
+import java.util.List;
+
+@Entity
+@Table(name = "patient")
+@PrimaryKeyJoinColumn(name = "id")
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
+@lombok.experimental.SuperBuilder
+public class Patient extends User{
+
+    private String firstName;
+    private String lastName;
+    private Long phone;
+    private LocalDate birthDay;
+
+    @OneToMany(mappedBy = "patient",cascade = CascadeType.ALL)
+    private List<Appointment> appointment;
+
+    @OneToOne(mappedBy = "patient", cascade = CascadeType.ALL)
+    private MedicalFile medicalFile;
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\User.java =====
+
+package org.example.healthcare.model;
+
+import jakarta.persistence.*;
+import lombok.*;
+import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.userdetails.UserDetails;
+
+import java.util.Collection;
+import java.util.List;
+
+@Entity
+@Table(name = "user")
+@Inheritance(strategy = InheritanceType.JOINED)
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@lombok.experimental.SuperBuilder
+public class User implements UserDetails {
+
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Integer id;
+
+    private String username;
+
+    @Column(unique = true)
+    private String email;
+
+    @Enumerated(EnumType.STRING)
+    private UserRoles userRoles;
+
+    private String password;
+
+    @Override
+    public Collection<? extends GrantedAuthority> getAuthorities() {
+        return List.of(() -> "ROLE_" + userRoles.name());
+    }
+
+    @Override
+    public String getPassword() {
+        return password;
+    }
+
+    @Override
+    public String getUsername() {
+        return email;
+    }
+
+    @Override
+    public boolean isAccountNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isAccountNonLocked() {
+        return true;
+    }
+
+    @Override
+    public boolean isCredentialsNonExpired() {
+        return true;
+    }
+
+    @Override
+    public boolean isEnabled() {
+        return true;
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\model\UserRoles.java =====
+
+package org.example.healthcare.model;
+
+public enum UserRoles {
+    PATIENT,
+    DOCTOR,
+    ADMIN
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\repositories\AppointmentRepository.java =====
+
+package org.example.healthcare.repositories;
+
+import org.example.healthcare.model.Appointment;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface AppointmentRepository extends JpaRepository<Appointment,Integer> {
+    List<Appointment> findByPatientId(Integer id);
+
+    List<Appointment> findByDoctorId(Integer id);
+
+    Page<Appointment> findByStatusContainingIgnoreCase(String name, Pageable pageable);
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\repositories\DoctorRepository.java =====
+
+package org.example.healthcare.repositories;
+
+import org.example.healthcare.model.Doctor;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DoctorRepository extends JpaRepository<Doctor,Integer> {
+    Page<Doctor> findBySpecialityContainingIgnoreCase(
+            String name,
+            Pageable pageable
+    );
+    
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\repositories\MedicalFileRepository.java =====
+
+package org.example.healthcare.repositories;
+
+import org.example.healthcare.model.MedicalFile;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MedicalFileRepository extends JpaRepository<MedicalFile,Integer> {
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\repositories\PatientRepository.java =====
+
+package org.example.healthcare.repositories;
+
+import org.example.healthcare.model.Patient;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface PatientRepository extends JpaRepository<Patient,Integer> {
+    Page<Patient> findByFirstNameContainingIgnoreCase(String name,Pageable pageable);
+
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\repositories\UserRepository.java =====
+
+package org.example.healthcare.repositories;
+
+import org.example.healthcare.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.Optional;
+
+@Repository
+public interface UserRepository extends JpaRepository<User,Integer> {
+    Optional<User> findByEmail(String email);
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\Security\JwtAuthenticationFilter.java =====
+
+package org.example.healthcare.Security;
+
+import jakarta.servlet.FilterChain;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.services.JwtService;
+import org.example.healthcare.services.UserInfoService;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.context.SecurityContextHolder;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
+import org.springframework.stereotype.Component;
+import org.springframework.web.filter.OncePerRequestFilter;
+
+import java.io.IOException;
+
+@Component
+@RequiredArgsConstructor
+public class JwtAuthenticationFilter extends OncePerRequestFilter {
+
+    private final JwtService jwtService;
+    private final UserInfoService userInfoService;
+
+    @Override
+    protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain) throws ServletException, IOException {
+        String path = request.getServletPath();
+
+        if (path.startsWith("/auth")) {
+            filterChain.doFilter(request, response);
+            return;
+        }
+
+        final String authHeader = request.getHeader("Authorization");
+
+        final String jwt;
+        final String userEmail;
+
+        if(authHeader == null || !authHeader.startsWith("Bearer")){
+            filterChain.doFilter(request,response);
+            return;
+        }
+
+        jwt = authHeader.substring(7);
+
+        userEmail = jwtService.extractUsername(jwt);
+
+        if(userEmail != null && SecurityContextHolder.getContext().getAuthentication() == null){
+
+            UserDetails userDetails = userInfoService.loadUserByUsername(userEmail);
+
+            if (jwtService.isTokenValid(jwt,userDetails)){
+                UsernamePasswordAuthenticationToken authToken = new UsernamePasswordAuthenticationToken(userDetails,null,userDetails.getAuthorities());
+                authToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));
+                SecurityContextHolder.getContext().setAuthentication(authToken);
+            }
+
+        }
+        filterChain.doFilter(request,response);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\AppointmentService.java =====
+
+package org.example.healthcare.services;
+
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.AppointmentRequestDTO;
+import org.example.healthcare.DTO.response.AppointmentResponseDTO;
+import org.example.healthcare.mapper.AppointmentMapper;
+import org.example.healthcare.model.Appointment;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.model.Patient;
+import org.example.healthcare.repositories.AppointmentRepository;
+import org.example.healthcare.repositories.DoctorRepository;
+import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class AppointmentService {
+    private final AppointmentRepository appointmentRepository;
+    private final AppointmentMapper appointmentMapper;
+    private final DoctorRepository doctorRepository;
+    private final PatientRepository patientRepository;
+
+    public boolean isPatientAppointmentOwner(Integer appointmentId, String currentUserEmail) {
+        return appointmentRepository.findById(appointmentId)
+                .map(app -> app.getPatient() != null && app.getPatient().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    public boolean isDoctorAppointmentOwner(Integer appointmentId, String currentUserEmail) {
+        return appointmentRepository.findById(appointmentId)
+                .map(app -> app.getDoctor() != null && app.getDoctor().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    @Transactional
+    public List<AppointmentResponseDTO> showAllAppointment(){
+        return appointmentRepository.findAll().stream()
+                .map(appointment -> appointmentMapper.toDTO(appointment))
+                .toList();
+    }
+
+    @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
+    public AppointmentResponseDTO createAppointment(AppointmentRequestDTO appointmentRequestDTO){
+        Doctor doctor = doctorRepository.findById(appointmentRequestDTO.getDoctorId())
+                .orElseThrow(() -> new RuntimeException("medecin non touve avec l'id : " + appointmentRequestDTO.getDoctorId()));
+        Patient patient = patientRepository.findById(appointmentRequestDTO.getPatientId())
+                .orElseThrow(() -> new RuntimeException("patient non trouve avec l'id : " + appointmentRequestDTO.getPatientId()));
+
+
+
+        Appointment appointment = appointmentMapper.toEntity(appointmentRequestDTO);
+        appointment.setDoctor(doctor);
+        appointment.setPatient(patient);
+        Appointment savedAppointment = appointmentRepository.save(appointment);
+
+        return appointmentMapper.toDTO(savedAppointment);
+    }
+
+    @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
+    public AppointmentResponseDTO updateAppointment(Integer id , AppointmentRequestDTO appointmentRequestDTO) {
+        Appointment appointment = appointmentRepository.findById(id)
+                .orElseThrow(() -> new RuntimeException("ce rendez-vous avec id " + id + " n'existe pas"));
+        appointmentMapper.updateEntityFromDTO(appointmentRequestDTO, appointment);
+        return appointmentMapper.toDTO(appointment);
+    }
+
+    @Transactional
+    @CacheEvict(value = "appointments", allEntries = true)
+    public void deleteAppointment(Integer id){
+        appointmentRepository.deleteById(id);
+    }
+
+
+
+    @Transactional
+    @Cacheable(value = "appointments", key = "'patient_' + #id")
+    public List<AppointmentResponseDTO> showAllAppointmentByPatientId(Integer id){
+        return appointmentRepository.findByPatientId(id).stream()
+                .map(appointment -> appointmentMapper.toDTO(appointment))
+                .toList();
+    }
+
+    @Transactional
+    @Cacheable(value = "appointments", key = "'doctor_' + #id")
+    public List<AppointmentResponseDTO> showAllAppointmentByDoctorId(Integer id){
+        return appointmentRepository.findByDoctorId(id).stream()
+                .map(appointment -> appointmentMapper.toDTO(appointment))
+                .toList();
+    }
+
+    @Transactional
+    @Cacheable(value = "appointments", key = "'page_' + #pageable.pageNumber + '_' + #pageable.pageSize")
+    public Page<AppointmentResponseDTO> getAppointments(Pageable pageable){
+        return appointmentRepository.findAll(pageable)
+                .map(appointmentMapper::toDTO);
+    }
+
+    @Transactional
+    @Cacheable(value = "appointments", key = "'search_' + #name + '_' + #pageable.pageNumber")
+    public Page<AppointmentResponseDTO> searchAppointments(String name, Pageable pageable){
+        return appointmentRepository
+                .findByStatusContainingIgnoreCase(name, pageable)
+                .map(appointmentMapper::toDTO);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\AuthenticationService.java =====
+
+package org.example.healthcare.services;
+
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.user.AuthResponse;
+import org.example.healthcare.DTO.user.LoginRequest;
+import org.example.healthcare.DTO.user.RegisterRequest;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.model.Patient;
+import org.example.healthcare.model.User;
+import org.example.healthcare.model.UserRoles;
+import org.example.healthcare.repositories.UserRepository;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class AuthenticationService {
+    private final UserRepository userRepository;
+    private final PasswordEncoder passwordEncoder;
+    private final JwtService jwtService;
+    private final AuthenticationManager authenticationManager;
+
+    public AuthResponse register(RegisterRequest registerRequest){
+        User user;
+
+        if (registerRequest.getUserRoles() == UserRoles.DOCTOR) {
+            Doctor doctor = new Doctor();
+            doctor.setUsername(registerRequest.getUsername());
+            doctor.setEmail(registerRequest.getEmail());
+            doctor.setUserRoles(registerRequest.getUserRoles());
+            doctor.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+            // Vous pouvez initialiser les champs par dÃ©faut du docteur ici si nÃ©cessaire
+            user = doctor;
+        } else if (registerRequest.getUserRoles() == UserRoles.PATIENT) {
+            Patient patient = new Patient();
+            patient.setUsername(registerRequest.getUsername());
+            patient.setEmail(registerRequest.getEmail());
+            patient.setUserRoles(registerRequest.getUserRoles());
+            patient.setPassword(passwordEncoder.encode(registerRequest.getPassword()));
+            user = patient;
+        } else {
+            user = User.builder()
+                    .username(registerRequest.getUsername())
+                    .email(registerRequest.getEmail())
+                    .userRoles(registerRequest.getUserRoles())
+                    .password(passwordEncoder.encode(registerRequest.getPassword()))
+                    .build();
+        }
+
+        userRepository.save(user);
+
+        String token = jwtService.generateToken(user);
+        return AuthResponse.builder().token(token).build();
+    }
+
+    public AuthResponse login(LoginRequest request){
+        authenticationManager.authenticate(
+                new UsernamePasswordAuthenticationToken(request.getEmail(),request.getPassword())
+        );
+
+        User user = userRepository.findByEmail(request.getEmail()).orElseThrow();
+
+        String token = jwtService.generateToken(user);
+
+        return AuthResponse.builder().token(token).build();
+
+    }
+
+
+
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\DoctorService.java =====
+
+package org.example.healthcare.services;
+
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.DoctorRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.mapper.DoctorMapper;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.repositories.DoctorRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+
+
+@Service
+@RequiredArgsConstructor
+public class DoctorService {
+    private final DoctorRepository doctorRepository;
+    private final DoctorMapper doctorMapper;
+
+    public boolean isDoctorOwner(Integer doctorId, String currentUserEmail) {
+        return doctorRepository.findById(doctorId)
+                .map(doctor -> doctor.getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    @Transactional
+    @CacheEvict(value = "doctors",allEntries = true)
+    public DoctorResponseDTO addDoctor(DoctorRequestDTO doctorRequestDTO){
+        Doctor doctor = doctorMapper.toEntity(doctorRequestDTO);
+        Doctor savedDoctor = doctorRepository.save(doctor);
+        return doctorMapper.toDTO(savedDoctor);
+    }
+
+    @CacheEvict(value = "doctors",allEntries = true)
+    public void deleteDoctor(Integer id){
+        doctorRepository.deleteById(id);
+    }
+
+    @Transactional
+    public List<DoctorResponseDTO> showAllDoctors(){
+        return doctorRepository.findAll().stream()
+                .map(doctor -> doctorMapper.toDTO(doctor))
+                .toList();
+    }
+
+    @Transactional
+    @CacheEvict(value = "doctors",allEntries = true)
+    public DoctorResponseDTO updateDoctor(Integer id , DoctorRequestDTO doctorRequestDTO){
+        Doctor doctor = doctorRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("medecin avec ce id "+id+" n'existe pas"));
+
+        doctorMapper.updateEntityFromDTO(doctorRequestDTO,doctor);
+
+        return doctorMapper.toDTO(doctor);
+    }
+
+    @Cacheable(value = "doctors", key = "'page_' + #pageable.pageNumber + '_' + #pageable.pageSize")
+    public Page<DoctorResponseDTO> getDoctors(Pageable pageable){
+        return doctorRepository.findAll(pageable)
+                .map(doctorMapper::toDTO);
+    }
+
+    @Cacheable(value = "doctors", key = "'search_' + #name + '_' + #pageable.pageNumber")
+    public Page<DoctorResponseDTO> searchDoctors(String name, Pageable pageable){
+        return doctorRepository.findBySpecialityContainingIgnoreCase(name, pageable)
+                .map(doctorMapper::toDTO);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\JwtService.java =====
+
+package org.example.healthcare.services;
+
+import io.jsonwebtoken.Claims;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
+import org.example.healthcare.model.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.stereotype.Service;
+
+import java.security.Key;
+import java.util.Date;
+import java.util.function.Function;
+
+@Service
+public class JwtService {
+    private static final String Secret = "c2VjcmV0a2V5MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTIzNDU2Nzg5";
+
+    public String extractUsername(String token){
+        return extractClaim(token, Claims::getSubject);
+    }
+
+    public <T> T extractClaim(String token , Function<Claims,T> resolver){
+        Claims claims = extractAllClaims(token);
+        return resolver.apply(claims);
+    }
+
+    public String generateToken(User user){
+        return Jwts.builder()
+                .setSubject(user.getUsername())
+                .claim("role", user.getUserRoles().name())
+                .setIssuedAt(new Date(System.currentTimeMillis()))
+                .setExpiration(new Date(System.currentTimeMillis()+1000*60*300))
+                .signWith(getSignKey(), SignatureAlgorithm.HS256)
+                .compact();
+    }
+
+    public boolean isTokenValid(String token,UserDetails userDetails){
+        final String username = extractUsername(token);
+        return username.equals(userDetails.getUsername()) && !isTokenExpired(token);
+    }
+
+    public boolean isTokenExpired(String token){
+        return extractExpiration(token).before(new Date());
+    }
+    private Date extractExpiration(String token){
+        return extractClaim(token,Claims::getExpiration);
+    }
+
+    private Claims extractAllClaims(String token){
+        return Jwts.parserBuilder()
+                .setSigningKey(getSignKey())
+                .build()
+                .parseClaimsJws(token)
+                .getBody();
+    }
+
+    private Key getSignKey(){
+        byte[] keyBytes = Decoders.BASE64.decode(Secret);
+        return Keys.hmacShaKeyFor(keyBytes);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\MedicalFileService.java =====
+
+package org.example.healthcare.services;
+
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
+import org.example.healthcare.mapper.MedicalFileMapper;
+import org.example.healthcare.model.MedicalFile;
+import org.example.healthcare.model.Patient;
+import org.example.healthcare.repositories.MedicalFileRepository;
+import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class MedicalFileService {
+    private final MedicalFileMapper medicalFileMapper;
+    private final MedicalFileRepository medicalFileRepository;
+    private final PatientRepository patientRepository;
+
+    public boolean isMedicalFileOwner(Integer fileId, String currentUserEmail) {
+        return medicalFileRepository.findById(fileId)
+                .map(file -> file.getPatient() != null && file.getPatient().getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    @Transactional
+    public MedicalFileResponseDTO addMedicalFile(MedicalFileRequestDTO medicalFileRequestDTO){
+        Patient patient = patientRepository.findById(medicalFileRequestDTO.getPatientId())
+                .orElseThrow(() -> new RuntimeException("Patient non trouvÃ© avec l'id : " + medicalFileRequestDTO.getPatientId()));
+        MedicalFile medicalFile = medicalFileMapper.toEntity(medicalFileRequestDTO);
+        medicalFile.setPatient(patient);
+        MedicalFile savedMedicalFile = medicalFileRepository.save(medicalFile);
+        return medicalFileMapper.toDTO(savedMedicalFile);
+    }
+
+    @Transactional
+    public MedicalFileResponseDTO showMedicalFileById(Integer id){
+        MedicalFile medicalFile = medicalFileRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("ce dossier n'existe pas"));
+        return medicalFileMapper.toDTO(medicalFile);
+    }
+
+    @Transactional
+    public MedicalFileResponseDTO updateMedicalFile(Integer id , MedicalFileRequestDTO medicalFileRequestDTO){
+        MedicalFile medicalFile = medicalFileRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("ce dossier n'existe pas"));
+
+        medicalFileMapper.updateEntityFromDTO(medicalFileRequestDTO,medicalFile);
+
+        return medicalFileMapper.toDTO(medicalFile);
+    }
+    public Page<MedicalFileResponseDTO> getMedicalFiles(Pageable pageable){
+        return medicalFileRepository.findAll(pageable)
+                .map(medicalFileMapper::toDTO);
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\PatientService.java =====
+
+package org.example.healthcare.services;
+
+import jakarta.transaction.Transactional;
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.request.PatientRequestDTO;
+import org.example.healthcare.DTO.response.PatientResponseDTO;
+import org.example.healthcare.mapper.PatientMapper;
+import org.example.healthcare.model.Patient;
+import org.example.healthcare.repositories.PatientRepository;
+import org.springframework.cache.annotation.CacheEvict;
+import org.springframework.cache.annotation.Cacheable;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.stereotype.Service;
+
+import java.util.List;
+import java.util.Optional;
+import java.util.stream.Stream;
+
+@Service
+@RequiredArgsConstructor
+public class PatientService {
+    private final PatientRepository patientRepository;
+    private final PatientMapper patientMapper;
+
+
+    public boolean isPatientOwner(Integer patientId, String currentUserEmail) {
+        return patientRepository.findById(patientId)
+                .map(patient -> patient.getEmail().equalsIgnoreCase(currentUserEmail))
+                .orElse(false);
+    }
+
+    @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
+    public PatientResponseDTO addPatient(PatientRequestDTO patientRequestDTO){
+        Patient patient = patientMapper.toEntity(patientRequestDTO);
+        Patient savedPatient = patientRepository.save(patient);
+        return patientMapper.toDTO(savedPatient);
+    }
+
+    @Transactional
+    public List<PatientResponseDTO> showAllPatients(){
+        return patientRepository.findAll().stream()
+                .map(patient -> patientMapper.toDTO(patient))
+                .toList();
+    }
+
+    @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
+    public void deletePatient(Integer id){
+        patientRepository.deleteById(id);
+    }
+
+    @Transactional
+    @Cacheable(value = "patients",key = "'patient_' + #id")
+    public PatientResponseDTO showPatientById(Integer id){
+        Patient patient = patientRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("ce patient avec ce "+id+" n'existe pas"));
+        return patientMapper.toDTO(patient);
+    }
+
+    @Transactional
+    @CacheEvict(value = "patients",allEntries = true)
+    public PatientResponseDTO updatePatient(Integer id,PatientRequestDTO patientRequestDTO){
+        Patient patient = patientRepository.findById(id)
+                .orElseThrow(()-> new RuntimeException("ce patient avec ce "+id+" n'existe pas"));
+
+        patientMapper.updateEntityFromDTO(patientRequestDTO,patient);
+
+        return patientMapper.toDTO(patient);
+
+    }
+    @Cacheable(value = "patients", key = "'page_' + #pageable.pageNumber + '_' + #pageable.pageSize")
+    public Page<PatientResponseDTO> getPatients(Pageable pageable){
+        return patientRepository.findAll(pageable)
+                .map(patientMapper::toDTO);
+    }
+
+    @Transactional
+    @Cacheable(value = "patients", key = "'search_' + #name + '_' + #pageable.pageNumber")
+    public Page<PatientResponseDTO> searchPatients(String name, Pageable pageable){
+        return patientRepository.findByFirstNameContainingIgnoreCase(name, pageable)
+                .map(patientMapper::toDTO);
+    }
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\services\UserInfoService.java =====
+
+package org.example.healthcare.services;
+
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.repositories.UserRepository;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
+import org.springframework.stereotype.Service;
+
+@Service
+@RequiredArgsConstructor
+public class UserInfoService implements UserDetailsService {
+    private final UserRepository userRepository;
+
+    @Override
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        return userRepository.findByEmail(email).orElseThrow(()->new UsernameNotFoundException("user with email "+email+" not found"));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\java\org\example\healthcare\HealthCareApplication.java =====
+
+package org.example.healthcare;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cache.annotation.EnableCaching;
+
+@SpringBootApplication
+@EnableCaching
+public class HealthCareApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(HealthCareApplication.class, args);
+    }
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\resources\db\migration\V1__init.sql =====
+
+create table patient(
+                        id int primary key,
+                        first_name varchar(255) not null,
+                        last_name varchar(255) not null,
+                        email varchar(255) not null unique,
+                        phone bigint not null unique,
+                        birth_day DATE not null
+);
+
+create table doctor(
+                       id int primary key,
+                       name varchar(255) not null,
+                       speciality varchar(255) not null,
+                       email varchar(255) not null unique,
+                       phone bigint not null unique
+);
+
+create table appointment(
+                            id int auto_increment primary key,
+                            appointment_date DATE NOT NULL,
+                            status VARCHAR(50) not null,
+                            doctor_id INT NOT NULL,
+                            patient_id INT NOT NULL,
+                            CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES doctor(id) ON DELETE CASCADE,
+                            CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES patient(id) ON DELETE CASCADE
+);
+
+create table medical_file(
+                             id int auto_increment primary key,
+                             diagnosis varchar(1024) not null,
+                             observation varchar(1024) not null,
+                             creation_date date not null,
+                             patient_id INT NOT NULL,
+                             CONSTRAINT fk_medical_file_patient FOREIGN KEY (patient_id) REFERENCES patient(id) ON DELETE CASCADE
+);
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\resources\db\migration\V2__addUser.sql =====
+
+create table user(
+    id int auto_increment primary key,
+    username varchar(255) not null,
+    email varchar(255) not null unique,
+    password varchar(255) not null,
+    user_roles varchar(255) not null
+);
+
+ALTER TABLE patient ADD CONSTRAINT fk_patient_user FOREIGN KEY (id) REFERENCES user(id) ON DELETE CASCADE;
+ALTER TABLE doctor ADD CONSTRAINT fk_doctor_user FOREIGN KEY (id) REFERENCES user(id) ON DELETE CASCADE;
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\main\resources\application.properties =====
+
+# ===============================
+# DATABASE CONNECTION
+# ===============================
+# Replace 'healthcare_db' with your actual database name
+spring.datasource.url=jdbc:mysql://localhost:3306/healthcare?createDatabaseIfNotExist=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=Reda@reda55
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ===============================
+# JPA / HIBERNATE
+# ===============================
+# 'none' because Flyway handles the schema
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# ===============================
+# FLYWAY MIGRATIONS
+# ===============================
+# This ensures Flyway runs your V1__init.sql on startup
+spring.flyway.enabled=true
+spring.flyway.baseline-on-migrate=true
+spring.flyway.locations=classpath:db/migration
+
+# ===============================
+# JACKSON / JSON
+# ===============================
+# Formats dates properly for your Appointment and MedicalFile entities
+spring.jackson.date-format=yyyy-MM-dd
+# ===============================
+# SERVER CONFIGURATION
+# ===============================
+server.port=8080
+server.error.include-message=always
+
+spring.data.redis.host=localhost
+spring.data.redis.port=6379
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\test\java\org\example\healthcare\services\AppointmentServiceTest.java =====
+
+package org.example.healthcare.services;
+
+import lombok.RequiredArgsConstructor;
+import org.example.healthcare.DTO.response.AppointmentResponseDTO;
+import org.example.healthcare.mapper.AppointmentMapper;
+import org.example.healthcare.model.Appointment;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.model.Patient;
+import org.example.healthcare.repositories.AppointmentRepository;
+import org.example.healthcare.repositories.DoctorRepository;
+import org.example.healthcare.repositories.PatientRepository;
+import org.example.healthcare.DTO.request.AppointmentRequestDTO;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.InjectMocks;
+import org.mockito.Mock;
+import org.mockito.junit.jupiter.MockitoExtension;
+
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+import java.util.Optional;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.when;
+
+@ExtendWith(MockitoExtension.class)
+class AppointmentServiceTest {
+
+    @Mock
+    AppointmentRepository appointmentRepository;
+    @Mock
+    AppointmentMapper appointmentMapper;
+    @Mock
+    DoctorRepository doctorRepository;
+    @Mock
+    PatientRepository patientRepository;
+
+    @InjectMocks
+    AppointmentService appointmentService;
+
+    Appointment appointment;
+    AppointmentRequestDTO appointmentRequestDTO;
+    AppointmentResponseDTO appointmentResponseDTO;
+    Doctor doctor;
+    Patient patient;
+    List<AppointmentResponseDTO> lista = new ArrayList<>();
+
+
+    @BeforeEach
+    void setUp() {
+        doctor = Doctor.builder()
+                .id(1)
+                .name("doctor1")
+                .speciality("dentist")
+                .email("doctor1@gmail.com")
+                .phone(12345678L)
+                .build();
+
+        patient = Patient.builder()
+                .id(1)
+                .firstName("patient1")
+                .lastName("test")
+                .email("patient1@gmail.com")
+                .phone(12345678L)
+                .birthDay(LocalDate.of(2004, 11, 4))
+                .build();
+
+        appointmentRequestDTO = AppointmentRequestDTO.builder()
+                .appointmentDate(LocalDate.of(2026, 11, 6))
+                .status("pending")
+                .doctorId(1)
+                .patientId(1)
+                .build();
+
+        appointmentResponseDTO = AppointmentResponseDTO.builder()
+                .id(1)
+                .appointmentDate(LocalDate.of(2026, 11, 6))
+                .status("pending")
+                .doctorId(1).
+                patientId(1)
+                .build();
+
+        appointment = Appointment.builder()
+                .id(1)
+                .appointmentDate(LocalDate.of(2026, 11, 6))
+                .status("pending")
+                .build();
+
+
+    }
+
+    @Test
+    void createAppointment() {
+        // arrange
+        when(doctorRepository.findById(1)).thenReturn(Optional.ofNullable(doctor));
+        when(patientRepository.findById(1)).thenReturn(Optional.ofNullable(patient));
+        when(appointmentMapper.toEntity(appointmentRequestDTO)).thenReturn(appointment);
+        appointment.setDoctor(doctor);
+        appointment.setPatient(patient);
+        when(appointmentRepository.save(appointment)).thenReturn(appointment);
+        when(appointmentMapper.toDTO(appointment)).thenReturn(appointmentResponseDTO);
+
+        AppointmentResponseDTO result = appointmentService.createAppointment(appointmentRequestDTO);
+
+        assertEquals(result, appointmentResponseDTO);
+    }
+
+//    @Test
+//    void updateAppointment() {
+//        when(appointmentRepository.findById(1)).thenReturn(Optional.ofNullable(appointment));
+//        appointmentMapper.updateEntityFromDTO(appointmentRequestDTO, appointment);
+//        appointmentMapper.toDTO(appointment);
+//
+//        AppointmentResponseDTO resulta = appointmentService.updateAppointment(1, appointmentRequestDTO);
+//
+//        assertEquals(resulta, appointmentResponseDTO);
+//
+//    }
+
+    @Test
+    void showAllAppointment() {
+        lista.add(appointmentResponseDTO);
+
+        List<Appointment> appointments = List.of(appointment);
+
+        when(appointmentRepository.findAll()).thenReturn(appointments);
+        when((appointmentMapper.toDTO(appointment))).thenReturn(appointmentResponseDTO);
+
+        List<AppointmentResponseDTO> result = appointmentService.showAllAppointment();
+
+
+        assertEquals(1,result.size());
+        assertEquals(lista,result);
+    }
+
+    @Test
+    void showAllAppointmentByPatientId() {
+        List<Appointment> appointments = List.of(appointment);
+
+        when(appointmentRepository.findByPatientId(1)).thenReturn(appointments);
+        when(appointmentMapper.toDTO(appointment)).thenReturn(appointmentResponseDTO);
+
+        List<AppointmentResponseDTO> result =
+                appointmentService.showAllAppointmentByPatientId(1);
+
+        assertEquals(1, result.size());
+        assertEquals(appointmentResponseDTO, result.get(0));
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\src\test\java\org\example\healthcare\HealthCareApplicationTests.java =====
+
+package org.example.healthcare;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class HealthCareApplicationTests {
+
+    @Test
+    void contextLoads() {
+    }
+
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\classes\db\migration\V1__init.sql =====
+
+create table patient(
+                        id int primary key,
+                        first_name varchar(255) not null,
+                        last_name varchar(255) not null,
+                        email varchar(255) not null unique,
+                        phone bigint not null unique,
+                        birth_day DATE not null
+);
+
+create table doctor(
+                       id int primary key,
+                       name varchar(255) not null,
+                       speciality varchar(255) not null,
+                       email varchar(255) not null unique,
+                       phone bigint not null unique
+);
+
+create table appointment(
+                            id int auto_increment primary key,
+                            appointment_date DATE NOT NULL,
+                            status VARCHAR(50) not null,
+                            doctor_id INT NOT NULL,
+                            patient_id INT NOT NULL,
+                            CONSTRAINT fk_appointment_doctor FOREIGN KEY (doctor_id) REFERENCES doctor(id) ON DELETE CASCADE,
+                            CONSTRAINT fk_appointment_patient FOREIGN KEY (patient_id) REFERENCES patient(id) ON DELETE CASCADE
+);
+
+create table medical_file(
+                             id int auto_increment primary key,
+                             diagnosis varchar(1024) not null,
+                             observation varchar(1024) not null,
+                             creation_date date not null,
+                             patient_id INT NOT NULL,
+                             CONSTRAINT fk_medical_file_patient FOREIGN KEY (patient_id) REFERENCES patient(id) ON DELETE CASCADE
+);
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\classes\db\migration\V2__addUser.sql =====
+
+create table user(
+    id int auto_increment primary key,
+    username varchar(255) not null,
+    email varchar(255) not null unique,
+    password varchar(255) not null,
+    user_roles varchar(255) not null
+);
+
+ALTER TABLE patient ADD CONSTRAINT fk_patient_user FOREIGN KEY (id) REFERENCES user(id) ON DELETE CASCADE;
+ALTER TABLE doctor ADD CONSTRAINT fk_doctor_user FOREIGN KEY (id) REFERENCES user(id) ON DELETE CASCADE;
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\classes\application.properties =====
+
+# ===============================
+# DATABASE CONNECTION
+# ===============================
+# Replace 'healthcare_db' with your actual database name
+spring.datasource.url=jdbc:mysql://localhost:3306/healthcare?createDatabaseIfNotExist=true&serverTimezone=UTC
+spring.datasource.username=root
+spring.datasource.password=Reda@reda55
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+
+# ===============================
+# JPA / HIBERNATE
+# ===============================
+# 'none' because Flyway handles the schema
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.format_sql=true
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQLDialect
+
+# ===============================
+# FLYWAY MIGRATIONS
+# ===============================
+# This ensures Flyway runs your V1__init.sql on startup
+spring.flyway.enabled=true
+spring.flyway.baseline-on-migrate=true
+spring.flyway.locations=classpath:db/migration
+
+# ===============================
+# JACKSON / JSON
+# ===============================
+# Formats dates properly for your Appointment and MedicalFile entities
+spring.jackson.date-format=yyyy-MM-dd
+# ===============================
+# SERVER CONFIGURATION
+# ===============================
+server.port=8080
+server.error.include-message=always
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\generated-sources\annotations\org\example\healthcare\mapper\AppointmentMapperImpl.java =====
+
+package org.example.healthcare.mapper;
+
+import javax.annotation.processing.Generated;
+import org.example.healthcare.DTO.request.AppointmentRequestDTO;
+import org.example.healthcare.DTO.response.AppointmentResponseDTO;
+import org.example.healthcare.model.Appointment;
+import org.example.healthcare.model.Doctor;
+import org.example.healthcare.model.Patient;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-06-02T13:43:40+0200",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.9 (Eclipse Adoptium)"
+)
+@Component
+public class AppointmentMapperImpl implements AppointmentMapper {
+
+    @Override
+    public AppointmentResponseDTO toDTO(Appointment appointment) {
+        if ( appointment == null ) {
+            return null;
+        }
+
+        AppointmentResponseDTO.AppointmentResponseDTOBuilder appointmentResponseDTO = AppointmentResponseDTO.builder();
+
+        appointmentResponseDTO.doctorId( appointmentDoctorId( appointment ) );
+        appointmentResponseDTO.patientId( appointmentPatientId( appointment ) );
+        appointmentResponseDTO.id( appointment.getId() );
+        appointmentResponseDTO.appointmentDate( appointment.getAppointmentDate() );
+        appointmentResponseDTO.status( appointment.getStatus() );
+
+        return appointmentResponseDTO.build();
+    }
+
+    @Override
+    public Appointment toEntity(AppointmentRequestDTO appointmentRequestDTO) {
+        if ( appointmentRequestDTO == null ) {
+            return null;
+        }
+
+        Appointment.AppointmentBuilder appointment = Appointment.builder();
+
+        appointment.appointmentDate( appointmentRequestDTO.getAppointmentDate() );
+        appointment.status( appointmentRequestDTO.getStatus() );
+
+        return appointment.build();
+    }
+
+    @Override
+    public void updateEntityFromDTO(AppointmentRequestDTO appointmentRequestDTO, Appointment appointment) {
+        if ( appointmentRequestDTO == null ) {
+            return;
+        }
+
+        appointment.setAppointmentDate( appointmentRequestDTO.getAppointmentDate() );
+        appointment.setStatus( appointmentRequestDTO.getStatus() );
+    }
+
+    private Integer appointmentDoctorId(Appointment appointment) {
+        if ( appointment == null ) {
+            return null;
+        }
+        Doctor doctor = appointment.getDoctor();
+        if ( doctor == null ) {
+            return null;
+        }
+        Integer id = doctor.getId();
+        if ( id == null ) {
+            return null;
+        }
+        return id;
+    }
+
+    private Integer appointmentPatientId(Appointment appointment) {
+        if ( appointment == null ) {
+            return null;
+        }
+        Patient patient = appointment.getPatient();
+        if ( patient == null ) {
+            return null;
+        }
+        Integer id = patient.getId();
+        if ( id == null ) {
+            return null;
+        }
+        return id;
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\generated-sources\annotations\org\example\healthcare\mapper\DoctorMapperImpl.java =====
+
+package org.example.healthcare.mapper;
+
+import javax.annotation.processing.Generated;
+import org.example.healthcare.DTO.request.DoctorRequestDTO;
+import org.example.healthcare.DTO.response.DoctorResponseDTO;
+import org.example.healthcare.model.Doctor;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-06-02T13:43:40+0200",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.9 (Eclipse Adoptium)"
+)
+@Component
+public class DoctorMapperImpl implements DoctorMapper {
+
+    @Override
+    public DoctorResponseDTO toDTO(Doctor doctor) {
+        if ( doctor == null ) {
+            return null;
+        }
+
+        DoctorResponseDTO.DoctorResponseDTOBuilder doctorResponseDTO = DoctorResponseDTO.builder();
+
+        doctorResponseDTO.id( doctor.getId() );
+        doctorResponseDTO.name( doctor.getName() );
+        doctorResponseDTO.speciality( doctor.getSpeciality() );
+        doctorResponseDTO.email( doctor.getEmail() );
+        doctorResponseDTO.phone( doctor.getPhone() );
+
+        return doctorResponseDTO.build();
+    }
+
+    @Override
+    public Doctor toEntity(DoctorRequestDTO doctorRequestDTO) {
+        if ( doctorRequestDTO == null ) {
+            return null;
+        }
+
+        Doctor.DoctorBuilder<?, ?> doctor = Doctor.builder();
+
+        doctor.email( doctorRequestDTO.getEmail() );
+        doctor.name( doctorRequestDTO.getName() );
+        doctor.speciality( doctorRequestDTO.getSpeciality() );
+        doctor.phone( doctorRequestDTO.getPhone() );
+
+        return doctor.build();
+    }
+
+    @Override
+    public void updateEntityFromDTO(DoctorRequestDTO doctorRequestDTO, Doctor doctor) {
+        if ( doctorRequestDTO == null ) {
+            return;
+        }
+
+        doctor.setEmail( doctorRequestDTO.getEmail() );
+        doctor.setName( doctorRequestDTO.getName() );
+        doctor.setSpeciality( doctorRequestDTO.getSpeciality() );
+        doctor.setPhone( doctorRequestDTO.getPhone() );
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\generated-sources\annotations\org\example\healthcare\mapper\MedicalFileMapperImpl.java =====
+
+package org.example.healthcare.mapper;
+
+import javax.annotation.processing.Generated;
+import org.example.healthcare.DTO.request.MedicalFileRequestDTO;
+import org.example.healthcare.DTO.response.MedicalFileResponseDTO;
+import org.example.healthcare.model.MedicalFile;
+import org.example.healthcare.model.Patient;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-06-02T13:43:40+0200",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.9 (Eclipse Adoptium)"
+)
+@Component
+public class MedicalFileMapperImpl implements MedicalFileMapper {
+
+    @Override
+    public MedicalFileResponseDTO toDTO(MedicalFile medicalFile) {
+        if ( medicalFile == null ) {
+            return null;
+        }
+
+        MedicalFileResponseDTO.MedicalFileResponseDTOBuilder medicalFileResponseDTO = MedicalFileResponseDTO.builder();
+
+        medicalFileResponseDTO.id( medicalFile.getId() );
+        medicalFileResponseDTO.diagnosis( medicalFile.getDiagnosis() );
+        medicalFileResponseDTO.observation( medicalFile.getObservation() );
+        medicalFileResponseDTO.creationDate( medicalFile.getCreationDate() );
+
+        return medicalFileResponseDTO.build();
+    }
+
+    @Override
+    public MedicalFile toEntity(MedicalFileRequestDTO medicalFileRequestDTO) {
+        if ( medicalFileRequestDTO == null ) {
+            return null;
+        }
+
+        MedicalFile.MedicalFileBuilder medicalFile = MedicalFile.builder();
+
+        medicalFile.patient( medicalFileRequestDTOToPatient( medicalFileRequestDTO ) );
+        medicalFile.diagnosis( medicalFileRequestDTO.getDiagnosis() );
+        medicalFile.observation( medicalFileRequestDTO.getObservation() );
+        medicalFile.creationDate( medicalFileRequestDTO.getCreationDate() );
+
+        return medicalFile.build();
+    }
+
+    @Override
+    public void updateEntityFromDTO(MedicalFileRequestDTO medicalFileRequestDTO, MedicalFile medicalFile) {
+        if ( medicalFileRequestDTO == null ) {
+            return;
+        }
+
+        if ( medicalFile.getPatient() == null ) {
+            medicalFile.setPatient( Patient.builder().build() );
+        }
+        medicalFileRequestDTOToPatient1( medicalFileRequestDTO, medicalFile.getPatient() );
+        medicalFile.setDiagnosis( medicalFileRequestDTO.getDiagnosis() );
+        medicalFile.setObservation( medicalFileRequestDTO.getObservation() );
+        medicalFile.setCreationDate( medicalFileRequestDTO.getCreationDate() );
+    }
+
+    protected Patient medicalFileRequestDTOToPatient(MedicalFileRequestDTO medicalFileRequestDTO) {
+        if ( medicalFileRequestDTO == null ) {
+            return null;
+        }
+
+        Patient.PatientBuilder<?, ?> patient = Patient.builder();
+
+        patient.id( medicalFileRequestDTO.getPatientId() );
+
+        return patient.build();
+    }
+
+    protected void medicalFileRequestDTOToPatient1(MedicalFileRequestDTO medicalFileRequestDTO, Patient mappingTarget) {
+        if ( medicalFileRequestDTO == null ) {
+            return;
+        }
+
+        mappingTarget.setId( medicalFileRequestDTO.getPatientId() );
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\generated-sources\annotations\org\example\healthcare\mapper\PatientMapperImpl.java =====
+
+package org.example.healthcare.mapper;
+
+import javax.annotation.processing.Generated;
+import org.example.healthcare.DTO.request.PatientRequestDTO;
+import org.example.healthcare.DTO.response.PatientResponseDTO;
+import org.example.healthcare.model.Patient;
+import org.springframework.stereotype.Component;
+
+@Generated(
+    value = "org.mapstruct.ap.MappingProcessor",
+    date = "2026-06-02T13:43:40+0200",
+    comments = "version: 1.5.5.Final, compiler: javac, environment: Java 21.0.9 (Eclipse Adoptium)"
+)
+@Component
+public class PatientMapperImpl implements PatientMapper {
+
+    @Override
+    public PatientResponseDTO toDTO(Patient patient) {
+        if ( patient == null ) {
+            return null;
+        }
+
+        PatientResponseDTO.PatientResponseDTOBuilder patientResponseDTO = PatientResponseDTO.builder();
+
+        patientResponseDTO.id( patient.getId() );
+        patientResponseDTO.firstName( patient.getFirstName() );
+        patientResponseDTO.lastName( patient.getLastName() );
+        patientResponseDTO.phone( patient.getPhone() );
+        patientResponseDTO.birthDay( patient.getBirthDay() );
+
+        return patientResponseDTO.build();
+    }
+
+    @Override
+    public Patient toEntity(PatientRequestDTO patientRequestDTO) {
+        if ( patientRequestDTO == null ) {
+            return null;
+        }
+
+        Patient.PatientBuilder<?, ?> patient = Patient.builder();
+
+        patient.email( patientRequestDTO.getEmail() );
+        patient.firstName( patientRequestDTO.getFirstName() );
+        patient.lastName( patientRequestDTO.getLastName() );
+        patient.phone( patientRequestDTO.getPhone() );
+        patient.birthDay( patientRequestDTO.getBirthDay() );
+
+        return patient.build();
+    }
+
+    @Override
+    public void updateEntityFromDTO(PatientRequestDTO patientRequestDTO, Patient patient) {
+        if ( patientRequestDTO == null ) {
+            return;
+        }
+
+        patient.setEmail( patientRequestDTO.getEmail() );
+        patient.setFirstName( patientRequestDTO.getFirstName() );
+        patient.setLastName( patientRequestDTO.getLastName() );
+        patient.setPhone( patientRequestDTO.getPhone() );
+        patient.setBirthDay( patientRequestDTO.getBirthDay() );
+    }
+}
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\target\maven-archiver\pom.properties =====
+
+artifactId=HealthCare
+groupId=org.example
+version=0.0.1-SNAPSHOT
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\docker-compose.yml =====
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: healthcare-mysql-2
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: healthcare
+      MYSQL_ROOT_PASSWORD: 123456789
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p123456789"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+
+  healthcare-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: healthcare-api
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/healthcare?createDatabaseIfNotExist=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: 123456789
+      MYSQL_DATABASE: healthcare
+      MYSQL_ROOT_PASSWORD: 123456789
+    ports:
+      - "8080:8080"
+
+volumes:
+  mysql_data:
+
+  #.\mvnw.cmd clean package -DskipTests
+#  docker compose build --no-cache
+#  docker compose up --build
+  #docker compose up --build
+
+
+===== C:\Users\appie\Documents\myjava\projects\HealthCare\pom.xml =====
+
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.2.5</version>
+        <relativePath/>
+    </parent>
+
+    <groupId>org.example</groupId>
+    <artifactId>HealthCare</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>HealthCare</name>
+
+    <properties>
+        <java.version>21</java.version>
+        <mapstruct.version>1.5.5.Final</mapstruct.version>
+    </properties>
+
+    <dependencies>
+
+        <!-- WEB -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <!-- JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
+
+        <!-- MYSQL -->
+        <dependency>
+            <groupId>com.mysql</groupId>
+            <artifactId>mysql-connector-j</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+
+        <!-- VALIDATION -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
+        </dependency>
+
+        <!-- FLYWAY -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
+        <!-- SWAGGER -->
+        <dependency>
+            <groupId>org.springdoc</groupId>
+            <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+            <version>2.5.0</version>
+        </dependency>
+
+        <!-- LOMBOK -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- MAPSTRUCT -->
+        <dependency>
+            <groupId>org.mapstruct</groupId>
+            <artifactId>mapstruct</artifactId>
+            <version>${mapstruct.version}</version>
+        </dependency>
+
+        <!-- TEST -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- DEVTOOLS -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+        <!-- FLYWAY -->
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-core</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.flywaydb</groupId>
+            <artifactId>flyway-mysql</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-api</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-impl</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+        <dependency>
+            <groupId>io.jsonwebtoken</groupId>
+            <artifactId>jjwt-jackson</artifactId>
+            <version>0.11.5</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-cache</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
+    </dependencies>
+
+    <build>
+        <plugins>
+
+            <!-- SPRING BOOT -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- COMPILER (LOMBOK + MAPSTRUCT FIX) -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>21</source>
+                    <target>21</target>
+                    <annotationProcessorPaths>
+
+                        <path>
+                            <groupId>org.projectlombok</groupId>
+                            <artifactId>lombok</artifactId>
+                            <version>1.18.32</version>
+                        </path>
+
+                        <path>
+                            <groupId>org.mapstruct</groupId>
+                            <artifactId>mapstruct-processor</artifactId>
+                            <version>${mapstruct.version}</version>
+                        </path>
+
+                    </annotationProcessorPaths>
+                </configuration>
+            </plugin>
+
+        </plugins>
+    </build>
+
+</project>
