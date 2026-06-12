@@ -17,6 +17,24 @@ services:
       retries: 10
       start_period: 20s
 
+  redis:
+    image: redis:latest
+    container_name: healthcare-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+  redis-insight:
+    image: redis/redisinsight:latest
+    container_name: healthcare-redisinsight
+    restart: unless-stopped
+    ports:
+      - "5540:5540"
+    depends_on:
+      - redis
+
   healthcare-api:
     build:
       context: .
@@ -26,19 +44,25 @@ services:
     depends_on:
       mysql:
         condition: service_healthy
+      redis:
+        condition: service_started
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/healthcare?createDatabaseIfNotExist=true
       SPRING_DATASOURCE_USERNAME: root
       SPRING_DATASOURCE_PASSWORD: 123456789
       MYSQL_DATABASE: healthcare
       MYSQL_ROOT_PASSWORD: 123456789
+
+      SPRING_DATA_REDIS_HOST: redis
+      SPRING_DATA_REDIS_PORT: 6379
     ports:
       - "8080:8080"
 
 volumes:
   mysql_data:
+  redis_data:
 
-  #.\mvnw.cmd clean package -DskipTests
-#  docker compose build --no-cache
-#  docker compose up --build
-  #docker compose up --build
+  # Commandes utiles :
+  # .\mvnw.cmd clean package -DskipTests
+  # docker compose build --no-cache
+  # docker compose up --build -d

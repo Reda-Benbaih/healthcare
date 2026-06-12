@@ -49,7 +49,7 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http)throws  Exception{
         http.csrf(httpSecurityCsrfConfigurer -> httpSecurityCsrfConfigurer.disable())
                 .authorizeHttpRequests(auth->auth
-                        .requestMatchers("/auth/register", "/auth/login","/swagger-ui/**").permitAll()
+                        .requestMatchers("/auth/**","/swagger-ui/**","/v3/api-docs/**", "/v3/api-docs.yaml","/swagger-ui.html").permitAll()
 
                         // L'ADMIN a accès à tout
                         .requestMatchers("/api/users/**").hasRole("ADMIN")
